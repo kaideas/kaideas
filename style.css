@@ -93,6 +93,50 @@ header {
 }*/
 
 
+/*.thumb img:hover{
+	opacity: .1;
+}*/
+
+.thumb span{
+	opacity: 0;
+	width: 10%;
+	position: absolute;
+	text-align: center;
+	vertical-align: top;
+}
+
+.thumb a:hover span{
+	opacity: 1;
+	background-color: #fa0;
+	line-height: 100%;
+	font-size: 30px;
+	font-family: "lexia";
+	font-weight: lighter;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 24.77vw;
+  width: 24.77vw;
+  position: absolute;
+  margin: 4px 4px 4px 0px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+
+
+
 .page {
 	margin-top: 20px;
 	padding-bottom: 150px;
