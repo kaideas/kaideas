@@ -215,6 +215,16 @@ h3 span{
 	margin-top: 100px;
 }
 
+.motion {
+	display: block;
+	height: 70vh;
+	padding-bottom: 60px;
+}
+
+#motion p{
+	padding-bottom: 100px;
+	padding-top: 
+}
 
 #three-across {
   -webkit-column-count: 3;
@@ -238,6 +248,7 @@ h3 span{
 iframe {
 	width: 100%;
 	position: absolute;
+	display: block;
 }
 
 
