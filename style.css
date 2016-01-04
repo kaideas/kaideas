@@ -251,6 +251,16 @@ iframe {
 	display: block;
 }
 
+#pranz1 {
+	width: 35.3%;
+}
+
+#pranz2 {
+	width: 63%;
+	padding-left: 1%;
+	float:right;
+}
+
 
 @media (max-width: 900px) {
 	#about-text p{
