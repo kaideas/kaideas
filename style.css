@@ -54,14 +54,7 @@ header {
 }
 
 .index {
-	margin-top: 80px;
-/*	width: 100vw;
-	text-align: center;*/
-}
-
-
-.index {
-  /* Prevent vertical gaps */
+  margin-top: 80px;
   line-height: 0;
    
   -webkit-column-count: 4;
@@ -216,6 +209,26 @@ h3 span{
 	margin-left: 20%;
 	margin-top: 100px;
 }
+
+
+#three-across {
+  -webkit-column-count: 3;
+  -webkit-column-gap:   3px;
+  -moz-column-count:    3;
+  -moz-column-gap:      3px;
+  column-count:         3;
+  column-gap:           3px;  
+}
+
+#two-across{
+  -webkit-column-count: 2;
+  -webkit-column-gap:   12px;
+  -moz-column-count:    2;
+  -moz-column-gap:      12px;
+  column-count:         2;
+  column-gap:           12px;  
+}
+
 
 
 @media (max-width: 900px) {
