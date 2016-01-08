@@ -8,20 +8,15 @@
 </header>
 
 <script>
-var fadeStart=0 // 0px scroll or less will equiv to 1 opacity
-    ,fadeUntil=300 // 200px scroll or more will equiv to 0 opacity
-    ,fading = $('header')
-;
-
-$(window).bind('scroll', function(){
-    var offset = $(document).scrollTop()
-        ,opacity=0
-    ;
-    if( offset<=fadeStart ){
-        opacity=1;
-    }else if( offset<=fadeUntil ){
-        opacity=1-offset/fadeUntil;
-    }
-    fading.css('opacity',opacity).html(opacity);
-});
+$(document).ready(function(){       
+            var scroll_pos = 0;
+            $(document).scroll(function() { 
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 210) {
+                    $("header").css('background-color', 'rgba(255,255,255,.3');
+                } else {
+                    $("header").css('background-color', 'rgba(255,255,255,1');
+                }
+            });
+        });
 </script>
