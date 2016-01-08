@@ -9,8 +9,13 @@
 
 <script>
 
+var docHeight = $(document).height();
+var windowHeight =$(window).height();
+var scrollTop = $(window).scrollTop();
+
 $(window).scroll(function () { 
-      var percent =  $(document).scrollTop()/$(document).height();
+	scrollTop = $(window).scrollTop();
+      var percent =  (scrollTop) / (docHeight - windowHeight);
       $("header").css("width", percent); 
     });
 </script>
