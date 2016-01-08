@@ -95,12 +95,7 @@ header {
 
 
 #dishful{
-	background:url(dishful index.png) no-repeat 50% 50%;
-}
-
-.thumb:hover{
-	background-image:url(dishful index.png);
-	background-repeat: no-repeat;
+	background:url(dishful index.png) no-repeat;
 }
 
 .thumb img:hover{
