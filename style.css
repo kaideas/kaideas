@@ -53,8 +53,11 @@ header {
 	font-weight: 100;
 }
 
+#homepage{
+	margin-top: 80px;
+}
+
 .index {
-  margin-top: 80px;
   line-height: 0;
    
   -webkit-column-count: 4;
@@ -353,7 +356,6 @@ iframe {
 	  -moz-column-count:    1;
 	  -webkit-column-count: 1;
 	  column-count:         1;
-	  margin-top: 80px;
 	}
 
 
