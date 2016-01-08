@@ -98,12 +98,8 @@ header {
 	background:url(dishful index.png) no-repeat 50% 50%;
 }
 
-#dishful img{
-	opacity: 0;
-}
-
-#dishful:hover img{
-	opacity: .9;
+.thumb:hover{
+	background:url(dishful index.png) no-repeat 50% 50%;
 }
 
 .thumb img:hover{
