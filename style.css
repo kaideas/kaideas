@@ -186,6 +186,10 @@ h3 span{
 	text-transform: uppercase;
 	font-family: "lexia";
 	font-weight: 600;
+	letter-spacing: 1px;
+	 -moz-font-feature-settings: "lnum";
+   -webkit-font-feature-settings: "lnum";
+	font-feature-settings: "lnum";
 }
 
 .page h1{
@@ -234,6 +238,14 @@ h3 span{
 	padding-top: 
 }
 
+.page ul {
+	padding-left: 25%;
+	padding-right: 25%;
+	font-size: 20px;
+	line-height: 2em;
+	font-weight: 200;
+}
+
 #three-across {
   -webkit-column-count: 3;
   -webkit-column-gap:   3px;
@@ -252,6 +264,25 @@ h3 span{
   column-gap:           12px;  
 }
 
+#n4lcover {
+	padding-left: 15%;
+	padding-right: 15%;
+	width: 70%;
+}
+
+#phonesize {
+	width: 74%;
+	padding-left: 13%;
+	padding-right: 13%;
+}
+
+#small {
+	width: 120px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
 
 iframe {
 	width: 100%;
