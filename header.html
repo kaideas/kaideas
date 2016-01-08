@@ -10,7 +10,7 @@
 <script>
 
 $(window).scroll(function () { 
-      var percent =  $(document).scrollTop();
+      var percent =  $(document).scrollTop() * .01;
       $("header").css("width", percent); 
     });
 </script>
