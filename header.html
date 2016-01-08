@@ -15,7 +15,7 @@ var scrollTop = $(window).scrollTop();
 
 $(window).scroll(function () { 
 	scrollTop = $(window).scrollTop();
-      var percent = (scrollTop) / (docHeight - windowHeight);
+      var percent = (scrollTop) / docHeight;
       percent *= 100;
       $("header").css("width", percent + '%'); 
     });
