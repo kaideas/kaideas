@@ -102,10 +102,6 @@ header {
 	opacity: 0;
 }
 
-#dishful:hover{
-	background-image:url(n4l.png);
-}
-
 #dishful:hover img{
 	opacity: .9;
 }
