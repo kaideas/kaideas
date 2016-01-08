@@ -94,6 +94,10 @@ header {
 }*/
 
 
+#dishful{
+	background:url(dishful index.png) no-repeat 50% 50%;
+}
+
 .thumb img:hover{
 	opacity: .1;
 }
@@ -373,7 +377,7 @@ footer h2{
 		margin-top: 20px;
 	}
 
-	
+
 	#two-across {
 	  -moz-column-count:    1;
 	  -webkit-column-count: 1;
