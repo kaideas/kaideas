@@ -303,6 +303,10 @@ iframe {
 	float:right;
 }
 
+footer h2{
+	text-align: center;
+	font-weight: 200;
+}
 
 @media (max-width: 900px) {
 	#about-text p{
