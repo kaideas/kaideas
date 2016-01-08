@@ -16,12 +16,6 @@ $(window).scroll(function () {
       var percent = $(document).scrollTop()/ ($(".page").height() - $(window).height());
       percent *= 100;
 
-      if (scrollTop == $(document).height()){
-      	percent = 100;
-      }
-
       $("header").css("width", percent + '%');
-      console.log(scrollTop);
-      console.log(percent); 
     });
 </script>
