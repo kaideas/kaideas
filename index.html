@@ -15,7 +15,17 @@
 		  $("#header").load("header.html"); 
 		  $("#footer").load("footer.html"); 
 		});
-	</script> 
+	
+	var scrollTop = $(document).scrollTop();
+
+	$(window).scroll(function () { 
+		scrollTop = $(document).scrollTop();
+	      var percent = $(document).scrollTop()/ ($(document).height() - $(window).height());
+	      percent *= 100;
+
+	      $("header").css("width", percent + '%');
+	    });
+</script>
 
 </head>
 

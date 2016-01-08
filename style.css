@@ -264,11 +264,13 @@ h3 span{
 
 #two-across{
   -webkit-column-count: 2;
-  -webkit-column-gap:   12px;
+  -webkit-column-gap:   5vw;
   -moz-column-count:    2;
-  -moz-column-gap:      12px;
+  -moz-column-gap:      5vw;
   column-count:         2;
-  column-gap:           12px;  
+  column-gap:           5vw;
+  padding-left: 10%;
+  padding-right: 10%;  
 }
 
 #n4lcover {
@@ -336,6 +338,17 @@ footer h2{
 		padding-left: 5%;
 	}
 
+	#two-across {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	#three-across {
+	  -moz-column-count:    1;
+	  -webkit-column-count: 1;
+	  column-count:         1;
+	}
+
 }
 
 @media (max-width: 600px) {
@@ -359,6 +372,13 @@ footer h2{
 	#about-text {
 		margin-top: 20px;
 	}
+
+	
+	#two-across {
+	  -moz-column-count:    1;
+	  -webkit-column-count: 1;
+	  column-count:         1;
+	}
 }
 
 
@@ -368,6 +388,7 @@ footer h2{
 	  -webkit-column-count: 1;
 	  column-count:         1;
 	}
+
 
 
 	header .navigation a{
