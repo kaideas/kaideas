@@ -184,7 +184,7 @@ h3 span{
 	font-weight: 200;
 }
 
-.page h2{
+h2{
 	padding-left: 20%;
 	text-transform: uppercase;
 	font-family: "lexia";
@@ -321,7 +321,7 @@ iframe {
 		padding-right: 10%;
 	}
 
-	.page h2 {
+	h2 {
 		padding-left: 5%;
 	}
 
@@ -380,7 +380,7 @@ iframe {
 		font-size: 16px;
 	}
 
-	.page h2 {
+	h2 {
 		padding-left: 4%;
 	}
 
