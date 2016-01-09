@@ -94,8 +94,9 @@ header {
 }*/
 
 
-#dishful{
-	background:url(dishful index.png) no-repeat;
+#dishful img:hover{
+
+
 }
 
 .thumb img:hover{
@@ -231,6 +232,7 @@ h3 span{
 
 .about img{
 	margin: 0;
+	padding-right: 20px;
 }
 
 #about-text {
@@ -322,10 +324,6 @@ footer h2{
 }
 
 @media (max-width: 900px) {
-	#about-text p{
-		font-size: 16px;
-		padding-right: 20%;
-	}
 
 	.index {
 	  -moz-column-count:    3;
@@ -336,6 +334,10 @@ footer h2{
 	.page p{
 		padding-left: 5%;
 		padding-right: 10%;
+	}
+
+	.page h1{
+		padding-left: 5%;
 	}
 
 	.page h2 {
@@ -353,15 +355,24 @@ footer h2{
 	  column-count:         1;
 	}
 
-}
+	#about-text {
+		margin-left: 20px;
+	}
 
-@media (max-width: 600px) {
 	.about {
 		float: none;
 		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 100px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.about {
+		margin: 0;
+		width: 100%;
 	}
 
 	#about-text p{
@@ -371,6 +382,12 @@ footer h2{
 		margin-top: 0px;
 		padding-left: 0;
 		padding-right: 20%;
+	}
+
+	#about-text h1{
+		padding-left: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	#about-text {
