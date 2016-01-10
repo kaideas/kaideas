@@ -69,7 +69,8 @@ header {
   -moz-column-count:    4;
   -moz-column-gap:      4px;
   column-count:         4;
-  column-gap:           4px;  
+  column-gap:           4px;
+  height: 25.1vw;  
 }
 
 .index img {
