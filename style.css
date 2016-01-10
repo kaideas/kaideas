@@ -76,7 +76,7 @@ header {
   /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
-  padding-bottom: .3vw;
+  padding-bottom: .6vw;
   position: relative;
 }
 
@@ -91,7 +91,7 @@ header {
   column-gap:           .6vw;  
   height: 25.3vw;  
 
-  margin-top: 200px;
+  margin-top: 80px;
 }
 
 .firstrow img {
