@@ -427,12 +427,12 @@ footer h2{
 
 
 @media (max-width: 450px) {
-/*	.index {
+	#homeindex {
 	  -moz-column-count:    1;
 	  -webkit-column-count: 1;
 	  column-count:         1;
 	}
-*/
+
 
 
 	header .navigation a{
