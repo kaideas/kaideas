@@ -459,3 +459,18 @@ footer h2{
 	}
 
 }
+
+@media (max-width: 375px) {
+	html {
+		max-width: 375px;
+	}
+
+	#header {
+		max-width: 375px;
+	}
+
+	header {
+		max-width: 375px;
+	}
+}
+
