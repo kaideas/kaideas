@@ -419,23 +419,21 @@ footer h2{
 
 
 @media (max-width: 450px) {
-	.index {
+/*	.index {
 	  -moz-column-count:    1;
 	  -webkit-column-count: 1;
 	  column-count:         1;
 	}
-
+*/
 
 
 	header .navigation a{
-		margin: 0px 3px 0px 3px;
 		display: block;
 		letter-spacing: 1px;
 	}
 
 	.navigation {
 		display: block;
-		margin-top: 18px;
 	}
 
 	#work {
