@@ -2,6 +2,7 @@ html {
 	font-family: "soleil";
 	color: #001F4D;
 	background-color: #EFEFEF;
+	max-width: 100vw;
 }
 
 header a{
