@@ -87,7 +87,7 @@ header {
   /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
-  padding-bottom: .6vw;
+  padding-bottom: 2vw;
   position: relative;
 }
 
@@ -95,13 +95,13 @@ header {
   line-height: 0;
    
   -webkit-column-count: 4;
-  -webkit-column-gap:   .6vw;
+  -webkit-column-gap:   2vw;
   -moz-column-count:    4;
-  -moz-column-gap:      .6vw;
+  -moz-column-gap:      2vw;
   column-count:         4;
-  column-gap:           .6vw;  
+  column-gap:           2vw;  
   height: 25.2vw;  
-
+  width: 100%;
   margin-top: 80px;
 }
 
@@ -423,6 +423,10 @@ footer h2{
 	  -webkit-column-count: 1;
 	  column-count:         1;
 	}
+
+	.firstrow {
+		height: 25.3vw;
+	}
 }
 
 
@@ -432,8 +436,6 @@ footer h2{
 	  -webkit-column-count: 1;
 	  column-count:         1;
 	}
-
-
 
 	header .navigation a{
 		display: block;
