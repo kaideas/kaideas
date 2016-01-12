@@ -434,10 +434,21 @@ footer h2{
 
 
 @media (max-width: 450px) {
-	#homeindex {
-	  -moz-column-count:    1;
-	  -webkit-column-count: 1;
-	  column-count:         1;
+	.index {
+	  -moz-column-count:    2;
+	  -webkit-column-count: 2;
+	  column-count:         2;
+	}
+
+	.firstrow {
+	  -moz-column-count:    2;
+	  -webkit-column-count: 2;
+	  column-count:         2;
+	  height: 100vw;
+	}
+
+	.firstrow img{
+		margin-bottom: 2.1vw;
 	}
 
 	header .navigation a{
