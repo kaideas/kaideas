@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <header>
-	<a href="home.html"><h1>Kaideas</h1></a>
+	<a href="index.html"><h1>Kaideas</h1></a>
 	<nav class="navigation">
-		<a href="work.html">WORK</a>
+		<a href="index.html" id="work">WORK</a>
 		<a href="about.html">ABOUT</a>
 	</nav>
 </header>
+
+<script> 
+var scrollTop = $(document).scrollTop();
+
+$(window).scroll(function () { 
+	scrollTop = $(document).scrollTop();
+      var percent = scrollTop/($(".page").height() - $(window).height());
+
+      // if (percent > 1) {
+      // 	percent = 1;
+      // }
+console.log(percent);
+      percent *= 100;
+
+      $("header").css("width", percent + 'vw');
+    });
+</script>
