@@ -76,11 +76,11 @@ header {
   line-height: 0;
    
   -webkit-column-count: 4;
-  -webkit-column-gap:   .6vw;
+  -webkit-column-gap:   2vw;
   -moz-column-count:    4;
-  -moz-column-gap:      .6vw;
+  -moz-column-gap:      2vw;
   column-count:         4;
-  column-gap:           .6vw; 
+  column-gap:           2vw; 
 }
 
 .index img {
