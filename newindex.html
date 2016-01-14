@@ -6,25 +6,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="normalize.css">
-	<script src="https://use.typekit.net/xun1mps.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 	<script src="masonry.pkgd.min.js"></script>
 
-<style>
-.thumb {width: 300px;}
-</style>
-
-
 <script>
-var container = document.querySelector('#grid');
-
-var msnry = new Masonry( container, {
-  // options
-  itemSelector: '.thumb',
-  columnWidth: 200
-
+$(document).ready(function($){
+    var $container = $('.grid');
+    setTimeout(function(){
+        // initialize
+        $container.masonry({
+          columnWidth: 100,
+          itemSelector: '.thumb'
+        });
+    }, 200);
 });
 
 </script>
@@ -32,62 +27,24 @@ var msnry = new Masonry( container, {
 </head>
 
 <body>
-<div class="grid js-masonry"
-  data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
 
 
-<div id="grid">
-	<div class="thumb" id="dishful">
+<div class="grid">
+	<div class="thumb">
 		<a href="dishful"><img src="dishful index.png"></a>
 	</div>
 
-	<div class="thumb" id="kettlekern">
+	<div class="thumb">
 		<a href="kettlekern"><img src="kettlekern.png"></a>
 	</div>
 
-	<div class="thumb" id="n4l">
+	<div class="thumb">
 		<a href="n4l"><img src="n4l.png"></a>
 	</div>
 	
-	<div class="thumb" id="thegame">
+	<div class="thumb">
 		<a href="thegame"><img src="thegame15.png"></a>
 	</div>
-
-	<div class="thumb" id="posters">
-		<a href="posters"><img src="posters.png"></a>
-	</div>
-
-	<div class="thumb" id="csm">
-		<a href="csm"><img src="csm.png"></a>
-	</div>
-
-	<div class="thumb" id="friendlyfacefriday">
-		<a href="friendlyfacefriday"><img src="ron-swanson-face.png"></a>
-	</div>	
-
-	<div class="thumb" id="ycc">
-		<a href="ycc"><img src="ycc.png"></a>
-	</div>
-
-	<div class="thumb" id="foote">
-		<a href="foote"><img src="foote.jpg"></a>
-	</div>
-
-	<div class="thumb" id="whalingcrew">
-		<a href="whalingcrew"><img src="whalingcrew.png"></a>
-	</div>
-
-	<div class="thumb" id="motion">
-		<a href="motion"><img src="randycvs.jpg"></a>
-	</div>
-
-	<div class="thumb" id="herald">
-		<a href="herald"><img src="herald.png"></a>
-	</div>
-
-	<div class="thumb" id="pranzare">
-		<a href="pranzare"><img src="pranzare.png"></a>
-	</div>	
 
 
 </div>
