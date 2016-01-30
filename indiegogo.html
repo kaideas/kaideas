@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indiegogo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://use.typekit.net/xun1mps.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script> 
+		$(function(){
+		  $("#header").load("header.html"); 
+		  $("#footer").load("footer.html"); 
+		});
+	</script> 
+</head>
+
+<body>
+<div id="header"></div>
+
+<div class="page">
+
+	<h2>Indiegogo Redesign</h2>
+	<p>I designed a concept for a visual editor mode on Indiegogo's campaign creation.</p>
+
+	<h2>The Situation</h2>
+	<p>I was exploring the campaign-making process for Indiegogo (just in case I come up with a world-changing idea). I noticed that in order to see where each piece of information I entered would go, I kept having to flip between the information entry mode and the ‘view campaign’. </p>
+
+	<img src="indiegogo-06.png">
+	<img src="indiegogo-view.png">
+
+
+	<p>This intermediate step annoyed me as I kept experimenting with different information tweaks. I found it easier to use Chrome Web Inspector to edit information, since it’s nice to see and know exactly where each piece of the story goes. Because Indiegogo campaigns are such an essential tool for many people and companies—the difference between getting off the ground or flopping—getting everything to look just right is crucial.
+	</p>
+	<br><br>
+
+	<h2>The Solution</h2>
+
+	<p>I started to conceptualize a visual editor mode to create a new campaign. While I originally conceived this idea as something to replace the traditional campaign entry, I realized that it might not be the ideal format for everyone (especially people who have experience running Indiegogo campaigns and want to input data quickly). The visual editor, then, should just be an optional mode that newcomers and visually-minded people could toggle on. </p> 
+
+	<img src="indiegogo-01.png">
+
+	<img src="indiegogo-02.png">
+
+	<p>
+	The visual editor mode looks almost identical to the actual campaign page, with the addition of a fixed pink bar across the top that ensures the user that this isn’t the live page—a more prominent version than the one included in the ‘view campaign’ feature. This bar also has a link back to the classic editor.</p>
+
+	<img src="indiegogo-03.png">
+
+
+	<p>Next to each editable section is an edit button (symbolized by a pencil) that allows the user to click and edit each section easily. For more complex sections, like the Short Summary and Perks, clicking the edit button would launch a pop-up window that mirrors the data input from the classic editor (darkening the page behind it).
+	</p>
+
+	<img src="indiegogo-04.png">
+	<img src="indiegogo-05.png">
+
+
+	<p>Finally the ‘save’ and ‘review & launch’ buttons from the classic editor are fixed at the bottom of the screen.</p>
+
+
+
+
+
+
+</div>
+
+
+<div id="footer"></div>
+</body>
