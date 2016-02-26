@@ -376,11 +376,6 @@ footer h2{
 		padding-right: 0%;
 	}
 
-	#three-across {
-	  -moz-column-count:    1;
-	  -webkit-column-count: 1;
-	  column-count:         1;
-	}
 
 	#about-text {
 		margin-left: 20px;
@@ -394,6 +389,16 @@ footer h2{
 		margin-top: 100px;
 	}
 }
+
+
+@media (max-width: 750px) {
+	#three-across {
+	  -moz-column-count:    1;
+	  -webkit-column-count: 1;
+	  column-count:         1;
+	}
+}
+
 
 @media (max-width: 600px) {
 
