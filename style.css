@@ -396,6 +396,8 @@ footer h2{
 	  -moz-column-count:    1;
 	  -webkit-column-count: 1;
 	  column-count:         1;
+	  padding-left: 20%;
+	  padding-right: 20%;
 	}
 }
 
@@ -430,6 +432,10 @@ footer h2{
 	  -moz-column-count:    1;
 	  -webkit-column-count: 1;
 	  column-count:         1;
+	}
+
+	#three-across {
+		padding: 0;
 	}
 
 	.firstrow {
