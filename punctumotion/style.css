@@ -204,7 +204,7 @@ h2 {
 .sad {
   animation: droop 2.5s linear infinite;
   transform-origin: 70% 90%;
-  margin-right: .5em;
+  margin-right: .3em;
 
 }
 
