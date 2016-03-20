@@ -32,11 +32,36 @@ function pasteHtmlAtCaret(html) {
         sel.createRange().pasteHTML(html);
     }
 }
-window.onload = function(){ 
- 
-    document.getElementById('nervous').onclick = function() {
-        document.getElementById('text').focus();
-        pasteHtmlAtCaret('<span class="nervous punctumotion">.</span>&nbsp;'); //need to move cursor forward to replace &nbsp;
-        return false;
-    };
-};
+
+function makeButton(name) {
+
+        document.getElementById(name).onclick = function() {
+            document.getElementById('text').focus();
+
+            var buttonTest = '<span class="'+name+ ' punctumotion">.</span>&nbsp;'
+            console.log(buttonTest);
+
+            pasteHtmlAtCaret(buttonTest); //need to move cursor forward to replace &nbsp;
+            return false;
+        };
+}
+
+makeButton('updown');
+makeButton('hyper');
+makeButton('sarcastic');
+makeButton('ellipsis');
+makeButton('nervous');
+makeButton('anxious');
+makeButton('sad');
+makeButton('angry');
+makeButton('confused');
+makeButton('urgent');
+
+
+
+
+    // document.getElementById('nervous').onclick = function() {
+    //     document.getElementById('text').focus();
+    //     pasteHtmlAtCaret('<span class="nervous punctumotion">.</span>&nbsp;'); //need to move cursor forward to replace &nbsp;
+    //     return false;
+    // };
