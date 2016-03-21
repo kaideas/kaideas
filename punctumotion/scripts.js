@@ -1,4 +1,6 @@
 function pasteHtmlAtCaret(html) {
+//by Tim Downs at http://stackoverflow.com/questions/6690752/insert-html-at-caret-in-a-contenteditable-div
+
     var sel, range;
     if (window.getSelection) {
         // IE9 and non-IE
@@ -58,12 +60,12 @@ makeButton('urgent');
 
 
 
-$('#send').click(function(){
-    var myTxt = $('#text').html();
-    $.ajax({
-        type: 'post',
-        url:  'messages.php',
-        data: myTxt
-    });
+// $('#send').click(function(){
+//     var myTxt = $('#text').html();
+//     $.ajax({
+//         type: 'POST',
+//         url:  this.href,
+//         data: myTxt
+//     });
 
-});
+// });
