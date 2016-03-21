@@ -14,6 +14,7 @@ body {
 .text-entry {
 	background-color: #27DCD4;
 	width: 420px;
+/*  height: 240px;*/
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -24,7 +25,36 @@ body {
 	box-shadow: 0px 2px rgba(0,0,0,.5);
 }
 
-input[type="text"]{
+#text {
+  background-color: white;
+  text-align: left;
+  color: black;
+    width: 400px;
+    font-size: 1.3em;
+    font-family: "InterFace";
+    font-weight: 100;
+    border-radius: 5px;
+    padding: 10px;
+    border: 0px solid;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+#text:hover {
+    outline: none;
+    box-shadow: inset 0px -2px #0079CF;
+    transition: .3s;
+}
+
+#text:focus {
+    outline: none;
+    box-shadow: inset 0px -2px #0079CF;
+    transition: .3s;
+    transform: translateY(1px);
+}
+
+
+/*input[type="text"]{
 	width: 400px;
     font-size: 1.3em;
     font-family: "InterFace";
@@ -43,7 +73,7 @@ input[type="text"]::-webkit-input-placeholder {
 input[type="text"]:focus {
     outline: none;
     box-shadow: 0px 2px rgba(0,0,0,.5);
-}
+}*/
 
 button {
 	font-size: 1.3em;
@@ -58,18 +88,29 @@ button {
     padding-right: 2px;
     margin: 6px;
     text-align: left;
-    box-shadow: 0px 2px rgba(0,0,0,.5);
+    box-shadow: 0px 1px rgba(0,0,0,.5);
+    transition: .5s;
 }
 
 button:focus {
     outline: none;
 }
 
-button:hover {background-color: rgba(255,255,255,.9)}
+button:hover {
+/*  background-color: #0079CF;
+  color: white;*/
+  transform: translateY(-1px);
+  transition: .3s;
+  box-shadow: 0 2px #0079CF;
+}
 
 button:active {
-  background-color: rgba(255,255,255,.9);
+  box-shadow: 0 2px #0079CF;
   transform: translateY(2px);
+/*
+  width: 50px;
+  height: 50px;*/
+  transition: .1s;
 }
 
 
@@ -79,6 +120,7 @@ button:active {
 
 .steps {
 	text-align: left;
+  padding-left: 20px;
 }
 
 .instructions {
@@ -122,33 +164,13 @@ button:active {
 }
 
 
-#text {
-  background-color: white;
-  text-align: left;
-  color: black;
-    width: 400px;
-    font-size: 1.3em;
-    font-family: "InterFace";
-    font-weight: 100;
-    border-radius: 5px;
-    padding: 10px;
-    border: 0px solid;
-    margin: auto;
-    margin-bottom: 16px;
-}
-
-#text:focus {
-    outline: none;
-    box-shadow: 0px 2px rgba(0,0,0,.5);
-}
-
-
 h1 {
 	font-size: 5em;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 8px;
 	margin-top: 20px;
+  line-height: .85em;
 }
 
 h2 {

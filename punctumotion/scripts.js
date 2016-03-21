@@ -38,8 +38,7 @@ function makeButton(name) {
         document.getElementById(name).onclick = function() {
             document.getElementById('text').focus();
 
-            var buttonTest = '<span class="'+name+ ' punctumotion">.</span>&nbsp;'
-            console.log(buttonTest);
+            var buttonTest = '<span class="'+name+ ' punctumotion">.</span>&#8203;';
 
             pasteHtmlAtCaret(buttonTest); //need to move cursor forward to replace &nbsp;
             return false;
@@ -59,9 +58,12 @@ makeButton('urgent');
 
 
 
+$('#send').click(function(){
+    var myTxt = $('#text').html();
+    $.ajax({
+        type: 'post',
+        url:  'messages.php',
+        data: myTxt
+    });
 
-    // document.getElementById('nervous').onclick = function() {
-    //     document.getElementById('text').focus();
-    //     pasteHtmlAtCaret('<span class="nervous punctumotion">.</span>&nbsp;'); //need to move cursor forward to replace &nbsp;
-    //     return false;
-    // };
+});
