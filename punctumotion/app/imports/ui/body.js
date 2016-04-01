@@ -1,20 +1,31 @@
-function moveCaret(win, charCount) {
-    var sel, range;
-    if (win.getSelection) {
-        sel = win.getSelection();
-        if (sel.rangeCount > 0) {
-            var textNode = sel.focusNode;
-            var newOffset = sel.focusOffset + charCount;
-            sel.collapse(textNode, Math.min(textNode.length, newOffset));
-        }
-    } else if ( (sel = win.document.selection) ) {
-        if (sel.type != "Control") {
-            range = sel.createRange();
-            range.move("character", charCount);
-            range.select();
-        }
+import { Template } from 'meteor/templating';
+
+import { Tasks } from '../api/tasks.js';
+ 
+import './body.html';
+ 
+Template.body.helpers({
+  tasks() {
+    return Tasks.find({});
+  },
+});
+
+Template.body.events({
+  'keypress .new-task'(event) {
+    if (event.which === 13) { // if the key is enter
+      const target = event.currentTarget;
+      const text = target.textContent;
+
+      Tasks.insert({
+        text,
+        createdAt: new Date(), // current time
+      });
+
+      target.textContent = '';
     }
-}
+  },
+});
+
 
 function pasteHtmlAtCaret(html) {
 //by Tim Downs at http://stackoverflow.com/questions/6690752/insert-html-at-caret-in-a-contenteditable-div
@@ -52,21 +63,9 @@ function pasteHtmlAtCaret(html) {
         originalRange.collapse(true);
         sel.createRange().pasteHTML(html);
     }
-    //moveCaret(sel, 1);
 }
 
-function makeButton(name) {
-
-        document.getElementById(name).onclick = function() {
-            document.getElementById('text').focus();
-
-            var buttonTest = '<span class="'+name+ ' punctumotion">.</span>&#8203;';
-
-            pasteHtmlAtCaret(buttonTest); //need to move cursor forward to replace &nbsp;
-            return false;
-        };
-}
-
+window.onload = function() {
 makeButton('updown');
 makeButton('hyper');
 makeButton('sarcastic');
@@ -77,15 +76,19 @@ makeButton('sad');
 makeButton('angry');
 makeButton('confused');
 makeButton('urgent');
+}
 
 
+function makeButton(name) {
 
-// $('#send').click(function(){
-//     var myTxt = $('#text').html();
-//     $.ajax({
-//         type: 'POST',
-//         url:  this.href,
-//         data: myTxt
-//     });
 
-// });
+        document.getElementById(name).onclick = function() {
+            document.getElementById('input').focus();
+            console.log("hi");
+
+            var buttonTest = '<span class="'+name+ ' punctumotion">.</span>&#8203;';
+
+            pasteHtmlAtCaret(buttonTest); //need to move cursor forward to replace &nbsp;
+            return false;
+        };
+}

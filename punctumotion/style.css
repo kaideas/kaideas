@@ -244,11 +244,6 @@ h2 {
 }
 
 
-.bubble::-moz-selection { background: yellow}
-.bubble::selection { background: yellow; }
-.punctumotion::-moz-selection { background: yellow}
-.punctumotion::selection { background: yellow; }
-
 
 .bubble {
   color: black;
