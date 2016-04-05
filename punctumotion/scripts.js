@@ -77,15 +77,3 @@ makeButton('sad');
 makeButton('angry');
 makeButton('confused');
 makeButton('urgent');
-
-
-
-// $('#send').click(function(){
-//     var myTxt = $('#text').html();
-//     $.ajax({
-//         type: 'POST',
-//         url:  this.href,
-//         data: myTxt
-//     });
-
-// });

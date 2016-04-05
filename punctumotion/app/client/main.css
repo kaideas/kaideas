@@ -20,8 +20,9 @@ body {
   left: 0;
   width: 100vw;
   overflow-x: hidden;
+/*  overflow-y: hidden;*/
   background-color: rgb(39, 220, 212);
-  height: 100vh;
+  height: 100%;
 }
 
 .topbar{
@@ -51,17 +52,18 @@ body {
   position: relative;
   width: 60%;
   max-width: 748px;
+  box-shadow: 0px 1px #BEF5F2;
 }
 
 .text:hover {
     outline: none;
-    box-shadow: inset 0px -2px #0079CF;
+    box-shadow: inset 0px -2px #27DCD4;
     transition: .3s;
 }
 
 .text:focus {
     outline: none;
-    box-shadow: inset 0px -2px #0079CF;
+    box-shadow: inset 0px -2px #27DCD4;
     transition: .3s;
     transform: translateY(1px);
 }
@@ -73,9 +75,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  height: 100%;
   max-width: 788px;
-  margin-bottom: 183px;
+  margin-bottom: 150px;
   padding-bottom: 50px;
+  overflow-y: scroll;
+}
+
+ul {
+  padding: 0;
 }
 
 ul li {
@@ -95,7 +103,7 @@ ul li {
 }
 
 h1 {
-	font-size: 4.5em;
+	font-size: 4em;
 	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -112,33 +120,34 @@ h2 {
 
 .text-entry {
   background-color: #0079CF;
-  width: 100vw;
+  width: 70%;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 60px;
   position: fixed;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 60px);
-    width: 788px;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 60px);
+  max-width: 788px;
 }
 
 
 button {
-  font-size: 1.4em;
-    font-family: "Proxima Nova";
-    font-weight: 800;
-    border: 0px solid;
-    border-radius: 5px;
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    padding-left: 8px;
-    padding-right: 2px;
-    margin: 6px;
-    text-align: left;
-    box-shadow: 0px 1px rgba(0,0,0,.5);
-    transition: .5s;
+  font-size: 1.7em;
+  font-family: "Proxima Nova";
+  font-weight: 800;
+  border: 0px solid;
+  border-radius: 5px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  padding-left: 8px;
+  padding-right: 2px;
+  margin: 6px;
+  text-align: left;
+  box-shadow: 0px 1px #BEF5F2;
+  transition: .5s;
+  overflow: hidden;
 }
 
 button:focus {
@@ -150,11 +159,11 @@ button:hover {
   color: white;*/
   transform: translateY(-1px);
   transition: .3s;
-  box-shadow: 0 2px #0079CF;
+  box-shadow: 0 2px #27DCD4;
 }
 
 button:active {
-  box-shadow: 0 2px #0079CF;
+  box-shadow: 0 2px #27DCD4;
   transform: translateY(2px);
 /*
   width: 50px;
@@ -165,6 +174,35 @@ button:active {
 
 .button-row {
   margin-bottom: 5px;
+}
+
+.bubble {
+  color: black;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 6px 12px 6px 12px;
+  margin-top: 16px;
+  font-weight: 200;
+  font-size: 1.5em;
+  letter-spacing: .01em;
+  display: block;
+  max-width: 60%;
+  text-align: left;
+  position: relative;
+}
+
+
+.right {
+  background: #BEF5F2;
+  margin-right: 20px; 
+  margin-left: auto;
+}
+
+.left {
+  background: #B3D7F1;
+  margin-left: 20px;
+  margin-right: auto;
+
 }
 
 
@@ -244,7 +282,8 @@ input {
 
 .punctumotion {
   display: inline-block;
-  width: .2em;
+  width: .4em;
+  font-size: 1.1em;
 }
 
 .updown {
@@ -290,7 +329,7 @@ input {
 
 .sad {
   animation: droop 2.5s linear infinite;
-  transform-origin: 70% 90%;
+  transform-origin: 50% 90%;
   margin-right: .3em;
 
 }
@@ -309,6 +348,12 @@ input {
   margin-right: .7em;
 }
 
+.bulge {
+  animation: bulge linear 1s infinite;
+  line-height: .5em;
+  transform-origin: 50% 50%;
+}
+
 
 
 
@@ -319,7 +364,7 @@ input {
   }
 
   50% {
-    transform:  translate(250%,0)  ;
+    transform:  translate(150%,0)  ;
   }
   
   100% {
@@ -503,7 +548,7 @@ input {
   }
 
   25% {
-    transform:translateX(150%);
+    transform:translateX(100%);
     opacity: 0;
   }
 
@@ -512,12 +557,12 @@ input {
   }
 
   57% { 
-    transform:translateX(150%);
+    transform:translateX(100%);
     opacity: 0;
   }
 
   58% { 
-    transform:translateX(300%);
+    transform:translateX(200%);
     opacity: 0;
   }
 
@@ -526,7 +571,7 @@ input {
   }
 
   90% { 
-    transform:translateX(300%);
+    transform:translateX(200%);
     opacity: 0;
   }
 
@@ -538,17 +583,63 @@ input {
 
 
 
-/*@keyframes bulge {
+@keyframes bulge {
   0% {
-    font-size: 1em;
+    -webkit-text-stroke: none;
   }
 
-  50% {
-    font-size: 2em;
+  10% {
+    -webkit-text-stroke: .08em black;
   }
 
-  100% {
-    font-size: 1em;
+  15% {
+    -webkit-text-stroke: 0px;
   }
-}*/
+}
+
+
+
+/*Screen size*/
+
+@media (max-width: 800px) {
+    .messages {
+      width: 100vw;
+      margin-top: 110px;
+    }
+
+    .text-entry {
+      width: 100vw;
+    }
+
+    h1 {
+      font-size: 3em;
+      padding: 0 20px 0 20px;
+      transition: .5s; 
+    }
+
+}
+
+
+@media (max-width: 550px) {
+    h1 {
+      font-size: 2em;
+      padding: 0 20px 0 20px;
+      letter-spacing: 3px; 
+      margin-top: 8px;
+      margin-bottom: 10px;
+      transition: .5s;
+    }
+
+    h2 {
+      font-size: 1em;
+      transition: .5s;
+    }
+
+    button {
+      font-size: 1em;
+      width: 30px;
+      height: 30px;
+    }
+
+}
 

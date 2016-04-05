@@ -5,28 +5,73 @@ import { Tasks } from '../api/tasks.js';
 import './body.html';
  
 Template.body.helpers({
-  tasks() {
-    return Tasks.find({});
+  messages: function() {
+    return Tasks.find({}, {sort: {createdAt: 1}});
   },
+
+  test: function() {
+    return text;
+  },
+
+  textWithSide: function () {
+    if (this.side) {
+      return "<li class='right'>" + this.text + "</li>"; 
+    } else {
+      return  "<li class='left'>" + this.text + "</li>";
+    }
+  }
 });
 
-Template.body.events({
-  'keypress .new-task'(event) {
-    if (event.which === 13) { // if the key is enter
-      const target = event.currentTarget;
-      const text = target.textContent;
 
-      Tasks.insert({
-        text,
-        createdAt: new Date(), // current time
+
+Template.body.events({
+  'keypress .new-message'(event) {
+    if (event.which === 13) { // if the key is enter
+      event.preventDefault();
+      const target = event.currentTarget;
+      // const text = target.textContent;
+
+      const text = $('.new-message').html();
+      var messages = Tasks.find({}, {sort: {createdAt: -1}, limit: 1});
+      var mostRecent = null;
+
+
+if (text.length > 0) {
+
+      messages.forEach(function (message) {
+        mostRecent = message;
       });
 
-      target.textContent = '';
+      if (mostRecent) {
+        console.log("inserting here");
+        Tasks.insert({
+          text,
+          side: !mostRecent.side,
+            createdAt: new Date(), // current time
+        });
+      } else {
+       console.log("inserting now!");
+       Tasks.insert({
+        text,
+        side: 0,
+          createdAt: new Date(), // current time
+      });
+    }
+
+   // debugger;
+    $('.new-message').empty();
+
+    //target.textContent = '';
+    $('body').scrollTop($('body')[0].scrollHeight);
+
+  }
+
+
+
     }
   },
 });
-
-
+  
 function pasteHtmlAtCaret(html) {
 //by Tim Downs at http://stackoverflow.com/questions/6690752/insert-html-at-caret-in-a-contenteditable-div
 
@@ -76,7 +121,9 @@ makeButton('sad');
 makeButton('angry');
 makeButton('confused');
 makeButton('urgent');
+makeButton('bulge');
 }
+
 
 
 function makeButton(name) {
@@ -84,7 +131,6 @@ function makeButton(name) {
 
         document.getElementById(name).onclick = function() {
             document.getElementById('input').focus();
-            console.log("hi");
 
             var buttonTest = '<span class="'+name+ ' punctumotion">.</span>&#8203;';
 
