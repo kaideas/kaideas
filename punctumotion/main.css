@@ -61,7 +61,7 @@ a {
 #landing {
   letter-spacing: 0;
   text-transform: none;
-  font-weight: 700;
+  font-weight: 'semi-bold', 500;
 }
 
 .homebox {
