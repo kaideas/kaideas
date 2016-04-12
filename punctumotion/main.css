@@ -21,8 +21,16 @@ body {
   width: 100vw;
   overflow-x: hidden;
 /*  overflow-y: hidden;*/
-  background-color: white;
+background-color: rgb(39, 220, 212)
   height: 100%;
+}
+
+img {
+  height: 90%;
+}
+
+iframe {
+  height: 90%;
 }
 
 a {
@@ -51,12 +59,10 @@ a {
 }
 
 .homebox {
-  margin-top: 30%;
+  margin-top: 20%;
   display: inline-block;
   text-align: center;
-  width: 40%;
-  max-height: 30vh;
-  background-color: white;
+  height: 60%;
   vertical-align: bottom;
 }
 
@@ -64,11 +70,13 @@ a {
 .try {
   float: left;
   margin-left: 5%;
+  width: 30%;
 }
 
 .video {
   float: right;
   margin-right: 5%;
+  width: 40%;
 }
 
 .text {
@@ -147,10 +155,9 @@ h1 {
   line-height: .85em;
 }
 
-h1 #landing {
+#landing {
   letter-spacing: 0;
   text-transform: none;
-  
 }
 
 h2 {
