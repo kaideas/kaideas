@@ -58,24 +58,35 @@ a {
   margin-left: -10px;
 }
 
+#landing {
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 700;
+}
+
 .homebox {
-  margin-top: 20%;
+  margin-top: 15%;
   display: inline-block;
   text-align: center;
   height: 60%;
   vertical-align: bottom;
 }
 
+.homebox h2{
+  padding-top: 30px;
+  color: white;
+}
+
 
 .try {
   float: left;
-  margin-left: 5%;
+  margin-left: 50px;
   width: 30%;
 }
 
 .video {
   float: right;
-  margin-right: 5%;
+  margin-right: 50px;
   width: 40%;
 }
 
@@ -155,10 +166,6 @@ h1 {
   line-height: .85em;
 }
 
-#landing {
-  letter-spacing: 0;
-  text-transform: none;
-}
 
 h2 {
 	color: #27DCD4;
