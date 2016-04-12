@@ -21,16 +21,20 @@ body {
   width: 100vw;
   overflow-x: hidden;
 /*  overflow-y: hidden;*/
-background-color: rgb(39, 220, 212)
+background-color: #0079CF;
   height: 100%;
 }
 
 img {
-  height: 90%;
+  height: 60%;
+  border: 10px solid #27DCD4;
+  border-radius: 5px;
 }
 
 iframe {
-  height: 90%;
+  height: 60%;
+  border: 10px solid #27DCD4;
+  border-radius: 5px;
 }
 
 a {
@@ -48,7 +52,7 @@ a {
   left: 0;
   top: 0;
   width: 100vw;
-  background-color: #0079CF;
+  background-color: none;
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 4px;
