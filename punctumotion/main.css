@@ -58,15 +58,11 @@ a {
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 4px;
+  margin-left: 10px;
 }
-
-.toptitle{
-  margin-left: -10px;
-}
-
 
 .subtitle {
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 #landing {
@@ -98,7 +94,7 @@ a {
   right: 10;
   font-weight: 600;
   font-size: 18px;
-  letter-spacing: .1em;
+  letter-spacing: .02em;
 
 }
 
@@ -189,6 +185,7 @@ h3 {
   color: #27DCD4;
   font-weight: 100;
   margin: 0;
+  font-size: 2em;
 }
 
 .text-entry {
