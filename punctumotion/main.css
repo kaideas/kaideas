@@ -64,6 +64,11 @@ a {
   margin-left: -10px;
 }
 
+
+.subtitle {
+  margin-top: 10%;
+}
+
 #landing {
   letter-spacing: 0;
   text-transform: none;
@@ -81,8 +86,10 @@ a {
 
 
 .stuff {
-  margin-top: 20%;
+  margin-top: 3%;
 }
+
+
 
 
 .kaideas {
@@ -91,6 +98,7 @@ a {
   right: 10;
   font-weight: 600;
   font-size: 18px;
+  letter-spacing: .1em;
 
 }
 
