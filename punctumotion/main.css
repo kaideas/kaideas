@@ -11,6 +11,8 @@ html {
   -webkit-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1";
+  font-kerning: normal;
+  -webkit-font-kerning: normal;
 }
 
 body {
@@ -95,7 +97,10 @@ a {
   font-weight: 600;
   font-size: 18px;
   letter-spacing: .02em;
+}
 
+a:hover {
+  color: #27DCD4;
 }
 
 .text {
