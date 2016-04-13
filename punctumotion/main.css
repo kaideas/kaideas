@@ -87,9 +87,10 @@ a {
 
 .kaideas {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  font-weight: 500;
+  bottom: 10;
+  right: 10;
+  font-weight: 600;
+  font-size: 18px;
 
 }
 
