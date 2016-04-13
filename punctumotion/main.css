@@ -78,27 +78,20 @@ a {
   padding: 20px;
 }
 
-/*.homebox h2{
-  padding-top: 30px;
-  color: white;
-}*/
 
 
 .stuff {
   margin-top: 20%;
 }
-/*
-.try {
-  float: left;
-  margin-left: 50px;
-  width: 30%;
-}
 
-.video {
-  float: right;
-  margin-right: 50px;
-  width: 40%;
-}*/
+
+.kaideas {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-weight: 500;
+
+}
 
 .text {
   background-color: white;
