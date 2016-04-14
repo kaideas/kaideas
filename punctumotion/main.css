@@ -803,10 +803,10 @@ input {
   }
 
   8% {
-    -webkit-text-stroke: .04em black;
+    -webkit-text-stroke: .04em;
   }
   10% {
-    -webkit-text-stroke: .09em black;
+    -webkit-text-stroke: .09em;
   }
 
   15% {
