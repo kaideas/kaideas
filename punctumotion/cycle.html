@@ -8,10 +8,14 @@
 </head>
 
 <div class="topbar" style="position:absolute;">
-<h1 id="landing" style="text-align:left;">Punctumotion<span id="cycle" class="updown punctumotion">.</span></a></h1>
+<h1 id="landing" style="text-align:left; margin-left: 30%;"><span id="cycle" class="updown punctumotion">.</span></a></h1>
 </div>
 
 <script>
+
+setTimeout(cycle(), 42850);
+
+function cycle() {
 setTimeout(function(){
 	$("#cycle").attr('class', 'hyper punctumotion');
 }, 3000);
@@ -66,8 +70,7 @@ setTimeout(function(){
 setTimeout(function(){
 	$("#cycle").attr('class', 'check punctumotion');
 }, 40250);
-
-
+}
 
 
 
