@@ -11,6 +11,12 @@ body {
 	overflow-y: scroll;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+		transition: .3s;
+}
+
 #topbar {
 	position: fixed;
 	top: 0;
@@ -42,6 +48,12 @@ h2 {
 	left: 10px;
 	position: absolute;
 	color: #888;
+	cursor: pointer;
+}
+
+#back:hover {
+
+	color: black;
 }
 
 #text {
