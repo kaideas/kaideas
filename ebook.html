@@ -16,14 +16,14 @@
 		<h1>Nathan Fielder's Ingenious Dumb Humor</h1>
 		<h2>Jonah Weiner • 2014 </h2>
 	</div>
-	<button id="back">
-	<div id="progress">
+	<div id="back">
+		<h6>&#8249;</h6>
 	</div>
 </div>
 
 <div id="text">
 	<p>
-		The new cafe at 1802 Hillhurst Avenue looked familiar, but something was off. It was nestled into a strip mall in Los Feliz, on the east side of Los Angeles, and its logo was a double-tailed mermaid, rendered in black and green, wearing a crown and a smile. Its name, spelled out in blocky white letters, was recognizable, too, except for a blunt détournement up top: DUMB STARBUCKS COFFEE. The store was the creation of Nathan Fielder, a Canadian-born comedian, and he designed it to look exactly like an outpost of the ubiquitous coffee chain — that is, until you realized that the word “dumb” was everywhere. The menu listed 27 beverages with names like Dumb Iced Caramel Macchiato and Dumb Chai Tea Latte. Cups came in sizes from Dumb Tall to Dumb Venti. Two baristas manned the counter, with DUMB STARBUCKS COFFEE emblazoned on their green aprons. “I hired them on Craigslist,” Fielder told me recently. “The ad actually asked for people who worked at Starbucks before, so we wouldn’t have to train them.” A rack of easy-listening CDs kept to the theme: “Dumb Jazz Standards,” “Dumb Norah Jones Duets.” The cafe quietly opened for business on a Friday last February. “I didn’t expect things to get as crazy as they did,” Fielder said.
+		The new cafe at 1802 Hillhurst Avenue looked familiar, but something was off. It was nestled into a strip mall in Los Feliz, on the east side of <span class="underline" id="la">Los Angeles</span>, and its logo was a double-tailed mermaid, rendered in black and green, wearing a crown and a smile. Its name, spelled out in blocky white letters, was recognizable, too, except for a blunt détournement up top: DUMB <span class="underline" id="starbucks">STARBUCKS COFFEE</span>. The store was the creation of Nathan Fielder, a <span class="underline" id="canadian">Canadian-born comedian</span>, and he designed it to look exactly like an outpost of the ubiquitous coffee chain — that is, until you realized that the word “dumb” was everywhere. The menu listed 27 beverages with names like Dumb Iced Caramel Macchiato and Dumb Chai Tea Latte. Cups came in sizes from Dumb Tall to Dumb Venti. Two baristas manned the counter, with DUMB STARBUCKS COFFEE emblazoned on their green aprons. “I hired them on <span class="underline" id="craigslist">Craigslist</span>,” Fielder told me recently. “The ad actually asked for people who worked at Starbucks before, so we wouldn’t have to train them.” A rack of easy-listening CDs kept to the theme: “Dumb Jazz Standards,” “Dumb Norah Jones Duets.” The cafe quietly opened for business on a Friday last February. “I didn’t expect things to get as crazy as they did,” Fielder said.
 
 </p>
 
@@ -172,6 +172,8 @@ Fielder likes magic for much the same reason that he likes comedy: its power to 
 <div id="photos-bar">
 <div id="photos">
 
+	<div id="photos-width">
+
 	<div class="photo">
 		<img src="images/01.png">
 		<p>Dumb Starbucks Coffee logo</p>
@@ -260,7 +262,9 @@ Fielder likes magic for much the same reason that he likes comedy: its power to 
 	<div class="photo">
 		<img src="images/01.png">
 		<p>Dumb Starbucks Coffee logo</p>
-	</div>		
+	</div>	
+
+</div>	
 
 </div>
 
@@ -278,7 +282,7 @@ Fielder likes magic for much the same reason that he likes comedy: its power to 
 
 <div id="books">
 
-<div class="book">
+<div class="book" id="01">
 	<img src="images/b01.png">
 	<div class="info">
 		<h3>The Los Angeles Book</h3>
@@ -288,7 +292,7 @@ Fielder likes magic for much the same reason that he likes comedy: its power to 
 	</div>
 </div>
 
-<div class="book">
+<div class="book" id="02">
 	<img src="images/b02.png">
 	<div class="info">
 		<h3>Onward</h3>
@@ -298,7 +302,7 @@ Fielder likes magic for much the same reason that he likes comedy: its power to 
 	</div>
 </div>
 
-<div class="book">
+<div class="book" id="03">
 	<img src="images/b03.png">
 	<div class="info">
 		<h3>Stand and Deliver</h3>
@@ -308,7 +312,7 @@ Fielder likes magic for much the same reason that he likes comedy: its power to 
 	</div>
 </div>
 
-<div class="book">
+<div class="book" id="04">
 	<img src="images/b04.png">
 	<div class="info">	
 		<h3>Craigslist: The Company and Its Founder</h3>
@@ -416,38 +420,46 @@ Fielder likes magic for much the same reason that he likes comedy: its power to 
 
 <script>
 
-// $(document).ready(function(){
-    // $("html,body").scrollTop(200);
-    // scroller = $("html,body").scrollTop;
-    // $('#photos-bar, #photos').scrollLeft(scroller);
-
-
 $(window).scroll(function () {
-	var ratio = $('#photos-bar').width() / ($(document).height() + $(window).height());
+	var ratio = $('#photos-width').width() / ($(document).height() + $(window).width() + $(window).height());
 
 	var related = $('#books').height() / ($(document).height() + $(window).height());
 
-	console.log($('#photos-bar').width());
-	console.log($('#books').height());
+	// $('#photos').scrollLeft( $(this).scrollTop() * ratio);
 
-	$('#photos').scrollLeft( $(this).scrollTop() * ratio);
+	// $('#related').scrollTop( $(this).scrollTop() * related);
+});
 
-	$('#related').scrollTop( $(this).scrollTop() * related);
+
+//find percentage of scrollTop
+//multiply that changing variable by photoswidth
+
+
+function amountscrolled(){
+    var scrollTop = $(window).scrollTop()
+    var trackLength = $(document).height() - $(window).height()
+    var pctScrolled = (scrollTop/trackLength)
+    return pctScrolled;
+}
+ 
+$(window).scroll(function(){
+    $('#photos').scrollLeft( amountscrolled() * ($('#photos-width').width() - $(window).width() ));
+    $('#related').scrollTop( amountscrolled() * ($('#books').height() - $(window).height() + 250));
 });
 
 
 
-$("#related").click( function() {
+$("#related, .underline").click( function() {
 
-if ($("#related").css('right') == '-300px') {
-	$("#related").animate({right: '0px'}, 700);
-	$("#related-button").animate({right: '318px'}, 700);
+if ($("#related").css('right') == '-320px') {
+	$("#related").animate({right: '0px'}, 300);
+	$("#related-button").animate({right: '335px'}, 300);
 	$("#related-button").html("<h6>&#8250;</h6>");
 }
 
 else {
-	$("#related").animate({right: '-300px'}, 700);
-	$("#related-button").animate({right: '16px'}, 700);
+	$("#related").animate({right: '-320px'}, 300);
+	$("#related-button").animate({right: '16px'}, 300);
 	$("#related-button").html("<h6>&#8249;</h6>");
 }
 });
@@ -455,21 +467,44 @@ else {
 $("#photos-bar").click( function() {
 
 if ($('.photo p').css('display') == 'none') {
-	$('#photos-bar').animate({height: '300px',}, 700);
-	$('.photo img').animate({height: '250px'}, 700);
-	$('#photos').width()
+	$('#photos-bar').animate({height: '300px'}, 300);
+	$('.photo img').animate({height: '250px'}, 300);
+		setTimeout(	function() {$('#photos').scrollLeft( amountscrolled() * ($('#photos-width').width() - $(window).width() ));}, 302);
 	$('.photo p').toggle();
-
 }
 
 else {
-	$('#photos-bar').animate({height: '100px'}, 700);
-	$('.photo img').animate({height: '75px'}, 700);
+	$('#photos-bar').animate({height: '100px'}, 300);
+	$('.photo img').animate({height: '75px'}, 300);
 	$('.photo p').toggle();
+
+	setTimeout(	function() {$('#photos').scrollLeft( amountscrolled() * ($('#photos-width').width() - $(window).width() ));}, 302);
 }
+
 
 });
 
+function hoverer(span, booknum) {
+	$('#' + span).hover(
+
+		function() {
+
+		$('#' + booknum).css("background", "white");
+		},
+
+		function() {
+
+		$('#' + booknum).css("background-color", "#F2F2F2");
+
+		}
+
+	);
+}
+
+hoverer('la', '01');
+hoverer('starbucks', '02');
+hoverer('canadian', '03');
+hoverer('craigslist', '04');
 
 </script>
 
