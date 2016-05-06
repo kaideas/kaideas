@@ -69,7 +69,7 @@ else {
 
 });
 
-$("#text").click( function() {
+$("#text, #container").click( function() {
 
 	$('#photos-bar').animate({height: '100px'}, 300);
 	$('.photo img').animate({height: '75px'}, 300);
