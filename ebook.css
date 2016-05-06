@@ -58,6 +58,10 @@ h2 {
 	font-weight: 500;
 }
 
+h2:hover {
+	cursor: pointer;
+}
+
 #header {
 	margin-left: 9%;
 }
