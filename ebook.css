@@ -1,6 +1,6 @@
 html {
 	background: white;
-	font-family: "Proxima Nova";
+	font-family: "Avenir";
 	height: auto;
 	transition: .3s;
 }
@@ -28,16 +28,16 @@ a {
 }
 
 #logo {
-	top: 23px;
-	right: 20px;
+	top: 30px;
+	right: 42px;
 	position: absolute;
 	color: #888;
 	cursor: pointer;
 	letter-spacing: 2px;
-	font-weight: 600;
+	font-weight: 500;
 	vertical-align: middle;
 	line-height: 0;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 #logo img {
@@ -63,7 +63,7 @@ h2 {
 }
 
 #back {
-	top: 18px;
+	top: 10px;
 	left: 10px;
 	position: absolute;
 	color: #888;
@@ -187,7 +187,7 @@ h3 {
 	font-size: .8em;
 	margin-top: 0px;
 	cursor: pointer;
-	line-height: 1em;
+	line-height: 1.3em;
 }
 
 h4 {
