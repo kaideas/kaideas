@@ -69,6 +69,17 @@ else {
 
 });
 
+$("#text").click( function() {
+
+	$('#photos-bar').animate({height: '100px'}, 300);
+	$('.photo img').animate({height: '75px'}, 300);
+	$('.photo p').hide();
+
+	setTimeout(	function() {$('#photos').scrollLeft( amountscrolled() * ($('#photos-width').width() - $(window).width() ));}, 302);
+
+});
+
+
 function hoverer(span, booknum) {
 
 		var flag = 0;

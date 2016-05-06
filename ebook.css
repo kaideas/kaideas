@@ -60,11 +60,21 @@ h2 {
 #text {
 	margin-top: 160px;
 	margin-left: 9%;
+	margin-right: auto;
 	font-size: 1.2em;
 	line-height: 1.8em;
 	width: 50%;
 	margin-bottom: 300px;
 	font-family: georgia;
+}
+
+p:first-child:first-letter {
+	float: left;
+	font-size: 75px;
+	line-height: 60px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px; 
 }
 
 #photos-bar {
