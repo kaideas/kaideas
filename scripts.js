@@ -1,18 +1,3 @@
-$(window).scroll(function () {
-	var ratio = $('#photos-width').width() / ($(document).height() + $(window).width() + $(window).height());
-
-	var related = $('#books').height() / ($(document).height() + $(window).height());
-
-	// $('#photos').scrollLeft( $(this).scrollTop() * ratio);
-
-	// $('#related').scrollTop( $(this).scrollTop() * related);
-});
-
-
-//find percentage of scrollTop
-//multiply that changing variable by photoswidth
-
-
 function amountscrolled(){
     var scrollTop = $(window).scrollTop()
     var trackLength = $(document).height() - $(window).height()
@@ -33,6 +18,8 @@ function related() {
 			$("#related").animate({right: '0px'}, 300);
 			$("#related-button").animate({right: '335px'}, 300);
 			$("#related-button").html("<h6>&#8250;</h6>");
+			$("#related").css('background-color', '#F2F2F2');
+			$("#related").css('cursor', 'auto');
 		}
 
 		else {
@@ -46,7 +33,6 @@ $(this).unbind('mouseleave');
 }
 
 related();
-
 
 $("#photos-bar").click( function() {
 
@@ -119,3 +105,20 @@ function hoverer(span, booknum) {
 
 	);
 }
+
+if ($("#related").css('right') == '-320px') {
+
+$("#related").hover( function() {
+
+	$("#related").css('background-color', 'white');
+	$("#related").css('cursor', 'pointer');
+},
+
+function(){
+
+	$("#related").css('background-color', '#F2F2F2');
+	$("#related").css('cursor', 'auto');
+});
+}
+
+
