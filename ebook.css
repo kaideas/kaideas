@@ -151,6 +151,10 @@ h2 {
 	cursor: pointer;
 }
 
+#related img:hover{
+	opacity: .5;
+}
+
 h3 {
 	font-size: .8em;
 	margin-top: 0px;
@@ -168,6 +172,10 @@ h4 {
 	line-height: 1.3em;
 }
 
+h3:hover, h4:hover {
+	color: #888;
+}
+
 h5 {
 	font-size: .6em;
 	text-transform: uppercase;
@@ -182,6 +190,10 @@ h5 {
 h5:hover {
 	background-color: #888;
 	color: white;
+}
+
+#onward:hover {
+	background-color: black;
 }
 
 .info {
