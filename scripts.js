@@ -11,6 +11,8 @@ $(window).scroll(function(){
 });
 
 
+var flag = false;
+
 function related() {
 	$("#related, .underline").click( function() {
 
@@ -20,12 +22,14 @@ function related() {
 			$("#related-button").html("<h6>&#8250;</h6>");
 			$("#related").css('background-color', '#F2F2F2');
 			$("#related").css('cursor', 'auto');
+			flag = true;
 		}
 
 		else {
 			$("#related").animate({right: '-320px'}, 300);
 			$("#related-button").animate({right: '16px'}, 300);
 			$("#related-button").html("<h6>&#8249;</h6>");
+			flag = false;
 		}
 	});
 
@@ -106,7 +110,7 @@ function hoverer(span, booknum) {
 	);
 }
 
-if ($("#related").css('right') == '-320px') {
+if (flag == false) {
 
 $("#related").hover( function() {
 
