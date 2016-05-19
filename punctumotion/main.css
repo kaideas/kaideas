@@ -982,6 +982,11 @@ input {
       transition: .5s;
     }
 
+        h3 {
+      font-size: 1em;
+      transition: .5s;
+    }
+
     button {
       font-size: 1em;
       width: 30px;
