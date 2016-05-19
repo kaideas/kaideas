@@ -982,8 +982,8 @@ input {
       transition: .5s;
     }
 
-        h3 {
-      font-size: 1em;
+    h3 {
+      font-size: 1.2em;
       transition: .5s;
     }
 
@@ -996,6 +996,10 @@ input {
     .stuff iframe, .stuff img{
       width: 320;
       height: 180;
+    }
+
+    .subtitle {
+      margin-top: 10vh;
     }
 }
 
