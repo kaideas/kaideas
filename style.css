@@ -150,6 +150,7 @@ header {
 
 .thumb-mobile {
 	visibility: hidden;
+	display: none;
 }
 
 
