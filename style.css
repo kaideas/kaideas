@@ -464,6 +464,7 @@ footer h2{
 	  height: 102.5vw;*/
 
 	  visibility: hidden;
+	  display: none;
 	}
 
 	.firstrow img{
@@ -473,6 +474,7 @@ footer h2{
 
 	.thumb-mobile {
 		visibility: visible;
+		display: inline-block;
 	}
 
 	header .navigation a{
