@@ -148,6 +148,11 @@ header {
 	text-transform: uppercase;
 }
 
+.thumb-mobile {
+	display: none;
+}
+
+
 h3 {
 	position: absolute;
 	top: 200px;
@@ -452,14 +457,21 @@ footer h2{
 	}
 
 	.firstrow {
-	  -moz-column-count:    2;
+/*	  -moz-column-count:    2;
 	  -webkit-column-count: 2;
 	  column-count:         2;
-	  height: 102.5vw;
+	  height: 102.5vw;*/
+
+	  display: none;
 	}
 
 	.firstrow img{
 		margin-bottom: 2.1vw;
+	}
+
+
+	.thumb-mobile {
+		display: inline-block;
 	}
 
 	header .navigation a{
