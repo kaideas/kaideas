@@ -149,7 +149,7 @@ header {
 }
 
 .thumb-mobile {
-	display: none;
+	display: hidden;
 }
 
 
@@ -462,7 +462,7 @@ footer h2{
 	  column-count:         2;
 	  height: 102.5vw;*/
 
-	  display: none;
+	  display: hidden;
 	}
 
 	.firstrow img{
