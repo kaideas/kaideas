@@ -149,7 +149,7 @@ header {
 }
 
 .thumb-mobile {
-	display: hidden;
+	visibility: hidden;
 }
 
 
@@ -462,7 +462,7 @@ footer h2{
 	  column-count:         2;
 	  height: 102.5vw;*/
 
-	  display: hidden;
+	  visibility: hidden;
 	}
 
 	.firstrow img{
@@ -471,7 +471,7 @@ footer h2{
 
 
 	.thumb-mobile {
-		display: inline-block;
+		visibility: visible;
 	}
 
 	header .navigation a{
