@@ -188,7 +188,7 @@ h3 span{
 
 
 #gant-page {
-/*	height: 3500px;*/
+	height: 300vw;
 	margin-top: 100px;
 	margin-bottom:300px;
 }
@@ -363,6 +363,14 @@ footer h2{
 	letter-spacing: 1px;
 }
 
+@media (max-width: 1100px) {
+	#gant-page {
+		height: 350vw;
+	}
+}
+
+
+
 @media (max-width: 900px) {
 
 /*	.index {
@@ -412,6 +420,10 @@ footer h2{
 	  padding-left: 20%;
 	  padding-right: 20%;
 	}
+
+	#gant-page {
+		height: 400vw;
+	}
 }
 
 
@@ -454,6 +466,11 @@ footer h2{
 	.firstrow {
 		height: 25.3vw;
 	}
+
+	#gant-page {
+		height: 2500px;
+	}
+
 }
 
 
