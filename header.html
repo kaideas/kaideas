@@ -15,5 +15,7 @@ $(window).scroll(function () {
       var percent = $(document).scrollTop()/ ($(".page").height() - $(window).height());
 
       $("header").css("width", percent + 'vw');
+
+      $("#load").css("display", "none");
     });
 </script>
