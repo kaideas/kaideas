@@ -11,6 +11,7 @@ body {
 	overflow-x: hidden;
 }
 
+
 header a{
 	color: #001F4D;
 	text-decoration: none;
@@ -70,6 +71,13 @@ header {
 	letter-spacing: 2px;
 	font-weight: 100;
 	margin-top: 9px;
+}
+
+
+#load {
+	background-color: #EFEFEF;
+	height: 100%;
+	width: 100%;
 }
 
 .index {
