@@ -108,7 +108,7 @@ a {
 
 
 .stuff {
-  margin-top: 7%;
+  margin-top: 8%;
 }
 
 
@@ -540,7 +540,7 @@ input {
 }
 
 .drop {
-  animation: drop linear 1s infinite;
+  animation: drop linear 1.1s infinite;
 }
 
 .check {
@@ -852,16 +852,19 @@ input {
   }
   
   30% {
-    transform:translateY(-5%) rotate(2deg);
+    transform:translateY(-5%) rotate(1deg);
     opacity: 1;
   } 
-  35% {
-    transform:translateY(0%) rotate(-2deg);
+  33% {
+    transform:translateY(0%) rotate(-1deg);
   } 
-  40% {
+  36% {
     transform:rotate(0deg);
   } 
 
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 @keyframes check {
