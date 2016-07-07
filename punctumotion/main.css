@@ -95,7 +95,8 @@ a {
 #landing {
   letter-spacing: 0;
   text-transform: none;
-  font-weight: 600;
+  font-weight: 800;
+  font-family: "akagi-pro", sans-serif;
 }
 
 .homebox {
