@@ -109,7 +109,6 @@ a {
 
 
 .stuff {
-  margin-top: 8%;
 }
 
 
@@ -457,6 +456,16 @@ input {
 
 .feedback img {
   max-width: 18px;
+}
+
+.description {
+  width: 510px;
+  text-align: left;
+  margin: auto;
+  font-weight: 100;
+  padding-left: 10px;
+  font-size: 1.4em;
+  font-family: "akagi-pro", sans-serif;
 }
 
 
@@ -967,7 +976,6 @@ input {
       height: auto;
     }
 
-
 }
 
 
@@ -1004,6 +1012,16 @@ input {
 
     .subtitle {
       margin-top: 10vh;
+    }
+
+    .description {
+      width: 90vh;
+      font-size: 1.2em;
+    }
+
+    #read-more {
+      display: block;
+      text-align: left;
     }
 }
 
