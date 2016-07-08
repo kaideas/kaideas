@@ -22,7 +22,6 @@ body {
   left: 0;
   width: 100vw;
   overflow-x: hidden;
-/*  overflow-y: hidden;*/
   background-color: #0079CF;
   height: 100%;
 }
@@ -104,6 +103,7 @@ a {
   text-align: center;
   vertical-align: bottom;
   padding: 20px;
+  margin-top: 7%;
 }
 
 
@@ -1015,13 +1015,85 @@ input {
     }
 
     .description {
-      width: 90vh;
-      font-size: 1.2em;
+      width: 380px;
+      font-size: 1.1em;
     }
 
     #read-more {
       display: block;
       text-align: left;
     }
+}
+
+@media (max-width: 550px) {
+    h1 {
+      font-size: 2.5em;
+      padding: 0 20px 0 20px;
+      letter-spacing: 3px; 
+      margin-top: 8px;
+      margin-bottom: 10px;
+      transition: .5s;
+    }
+
+    h2 {
+      font-size: 1em;
+      transition: .5s;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      transition: .5s;
+    }
+
+    button {
+      font-size: 1em;
+      width: 30px;
+      height: 30px;
+    }
+
+    .stuff iframe, .stuff img{
+      width: 320;
+      height: 180;
+    }
+
+    .subtitle {
+      margin-top: 10vh;
+    }
+
+    .description {
+      width: 380px;
+      font-size: 1.1em;
+    }
+
+    #read-more {
+      display: block;
+      text-align: center;
+      font-size: 1.3em;
+    }
+}
+
+@media (max-width: 400px) {
+
+  body {
+    height: 100vh;
+    padding-bottom: 30px;
+  }
+
+  .homebox {
+    margin-top: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .kaideas {
+    position: absolute;
+    bottom: -20px;
+  }
+
+  .description {
+    width: 310px;
+    font-size: 1.2em;
+  }
+
 }
 
