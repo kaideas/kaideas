@@ -364,6 +364,8 @@ iframe {
 	float:right;
 }
 
+
+
 footer h2{
 	text-align: center;
 	font-weight: 200;
@@ -373,9 +375,7 @@ footer h2{
 }
 
 @media (max-width: 1100px) {
-	#gant-page {
-		height: 350vw;
-	}
+
 }
 
 
@@ -429,10 +429,6 @@ footer h2{
 	  padding-left: 20%;
 	  padding-right: 20%;
 	}
-
-	#gant-page {
-		height: 400vw;
-	}
 }
 
 
@@ -474,10 +470,6 @@ footer h2{
 
 	.firstrow {
 		height: 25.3vw;
-	}
-
-	#gant-page {
-		height: 2500px;
 	}
 
 }
@@ -532,10 +524,6 @@ footer h2{
 
 	.page h2 {
 		padding-left: 4%;
-	}
-
-	#gant-page {
-		height: 2100px;
 	}
 
 }
