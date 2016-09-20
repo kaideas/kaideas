@@ -28,11 +28,9 @@
 
 
 <div>
-<img src="gant-1.png">
+<img src="gant-first.png">
 
-<img src="gant-2.png">
-
-<img src="gant-3.png">
+<img src="gant-second.png">
 
 </div>
 
@@ -50,7 +48,7 @@ This was a weeklong independent assignment from April 2016.</p>
 
 <p>After brainstorming many possible features, I simplified my list to the core ideas of the app:
 	<ul>
-		<li>Make it easy enough to use so that users aren’t bumping into things in the store</li>
+		<li>Make it easy enough to use so that users don't bump into things in the store</li>
 		<li>Help you find the right items</li>
 		<li>Keep track of your clothing</li>
 		<li>Share and get style feedback from friends</li>
@@ -63,7 +61,7 @@ This was a weeklong independent assignment from April 2016.</p>
 
 <p>So, I designed a chat-based app, a virtual in-store shopping assistant that would prompt the user with questions about what they were shopping for, and different features could be accessed with different keywords or phrases.</p>
 
-<img src="gant-5.png">
+<img src="gant-messenger.png">
 
 <p>Problems that led me to scrapping this idea:
 	<ul>
@@ -77,6 +75,8 @@ This was a weeklong independent assignment from April 2016.</p>
 <p>Though I had limited time to complete the project, I went through several iterations even after settling on my final idea (which I'll discuss next). My first iteration of the onboarding had several questions on the same page, but I found that this cluttered up the space instead of making each page one simple task. I also originally started with separate buttons for entering sizes, but transitioned to have dials that have a logical sense of order and communicate that a user just picks one in a concise manner. Similarly, the homepage went through many iterations, first with many buttons and eventually with fewer and larger buttons.
 </p>
 
+<img src="gant-onboard.png">
+
 <h2>The Solution</h2>
 <p>Since the chat assistant bot had some issues, I decided to design a more standard app, with a visual style that mirrors that of Gant's website following their rebrand: simple, refined, monochrome.</p>
 
@@ -84,19 +84,23 @@ This was a weeklong independent assignment from April 2016.</p>
 The app detects when the user is in a Gant store, and has a specialized and simplified in-store homepage with Find, Try on (to pick up clothes for a scheduled fitting), and Send.
 </p>
 
-<img src="gant-7.png">
+<img src="gant-home.png">
 
 <p><strong>Find</strong><br>The app allows users to narrow down what they’re looking for, and then shows where in the store those items can be found (and in the user’s size). Clothing items can be scanned individually for more information, including what other clothing it would pair well with.</p>
 
+<img src="gant-item.png">
+
+<img src="gant-scan.png">
+
 <p><strong>Try On</strong><br>The Try On feature (which I kept referring to in my head as the “takeout” feature) was simple and fit into the brief. Shoppers have less time to shop, but find the trip valuable to try on clothes; the app should help make each trip to the store as efficient as possible. Users can choose certain clothing articles they want to try on (for fit, color, etc.) and set a time for the clothes to be set aside (in a reserved fitting room?), ready for the user to try on the moment they walk in the door, just as they might order takeout from a restaurant.</p>
 
-<img src="gant-4.png">
+<img src="gant-snap.png">
 
-<p><strong>Send</strong><br>In trying to figure out the best way to allow users to get fashion advice from friends, I thought instantly of social, visual-centric Snapchat. But, in its current form, Snapchat wouldn’t work optimally for this app. Because of the ephemeral nature of Snapchat, when people receive Snapchats, there’s usually no urgency to check it right away, because the content is generally something frivolous. However, when users are in a store, they need to know opinions right away, not 20 minutes later when they’ve already bought the item or left the store.</p>
-<p> I came up with a feature that would bring Snapchat a sense of urgency while also bolstering my shopping app. Snaprate would allow users to take a picture and send it to their friends, who can respond by swiping for Yes, Nope or Chat to leave a more detailed comment. Users would be encouraged to check these Snaprates quickly because they expire in a matter of minutes. This feature could open up more partnership opportunities between Snapchat and other companies that could integrate it into their apps, while gaining feedback on products and advertising. Snaprate could also be used for more routine choices like hairstyles or restaurants or movies.
+<p><strong>Send (Snaprate)</strong><br>In trying to figure out the best way to allow users to get fashion advice from friends, I thought instantly of social, visual-centric Snapchat. But, in its current form, Snapchat wouldn’t work optimally for this app.</p> <p>Because of the ephemeral nature of Snapchat, when people receive Snapchats, there’s usually no urgency to check it right away, because the content is generally something frivolous. However, when users are in a store, they need to know opinions right away, not 20 minutes later, after they bought the item or left the store.</p>
+<p> I came up with a feature that would bring Snapchat a sense of urgency while also bolstering my shopping app. Snaprate would allow users to take a picture and send it to their friends, who can respond by swiping for Yes, Nope or Chat to leave a more detailed comment. Users would be encouraged to check these Snaprates quickly because they expire in a matter of minutes. </p><p>This feature could open up more partnership opportunities between Snapchat and other companies that could integrate it into their apps, while gaining feedback on products and advertising. Snaprate could also be used for more routine choices like hairstyles or restaurants or movies.
 </p>
 
-<img src="gant-6.png">
+<img src="gant-wardrobe.png">
 
 <p><strong>Wardrobe</strong><br>Allowing users to log their wardrobe not only helps them keep track of their clothing in an efficient way, but suggests new items that will pair well with already-owned clothes. Clothes in a user’s wardrobe are marked with a coathanger icon.</p>
 <p><strong>Suggestions</strong><br>The app offers suggestions in a Tinder-like format, based on wardrobe and buying history. The user can narrow down based on type of clothing or full outfits, and add items to their bag (or just save it to a list of clothing they like but aren’t ready to commit to yet).</p>
