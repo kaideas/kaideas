@@ -273,6 +273,12 @@ h3 span{
 	color: #fa0;
 }
 
+.page .pullquote {
+	font-size: 24px;
+	font-weight: 600;
+	padding: 5% 15%;
+}
+
 .about {
 	width: 33%;
 	float: left;
@@ -429,6 +435,10 @@ footer h2{
 	  padding-left: 20%;
 	  padding-right: 20%;
 	}
+
+	.page .pullquote {
+		padding: 4% 10%;
+	}
 }
 
 
@@ -470,6 +480,10 @@ footer h2{
 
 	.firstrow {
 		height: 25.3vw;
+	}
+
+	.page .pullquote {
+		padding: 4% 3%;
 	}
 
 }
@@ -524,6 +538,17 @@ footer h2{
 
 	.page h2 {
 		padding-left: 4%;
+	}
+
+	.page .pullquote {
+		font-size: 18px;
+		padding: 3% 8%;
+	}
+
+	#phonesize {
+		padding: 0 2%;
+		width: 90%;
+		margin: 20px 0px;
 	}
 
 }
