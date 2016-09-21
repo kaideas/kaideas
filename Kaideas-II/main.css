@@ -138,6 +138,7 @@ h3 {
   color: white;
   text-decoration: none;
   text-align: center;
+  display: block;
 }
 /*
 #container a {
