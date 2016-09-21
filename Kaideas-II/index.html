@@ -60,7 +60,8 @@ $('#refresh').click (function() {
 
 	if (counter == 0) {
 		role = 'punctuation innovator';
-		$('#description-text').load('punctuation.txt'); 
+		$('#description-text').load('punctuation.txt');
+		console.log('punc') 
 	}
 
 	else if (counter == 1) {
@@ -72,6 +73,7 @@ $('#refresh').click (function() {
 	else if (counter == 2) {
 		role ='intramural director/coach/<wbr>designer/<wbr>athlete/<wbr>champion';
 		$('#description-text').load('berkeley.txt');
+				console.log('berk')
 	}
 
 	else if (counter == 3) {
