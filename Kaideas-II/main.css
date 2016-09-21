@@ -156,10 +156,11 @@ h3 {
 }
 
 #refresh:hover #refresh-icon{
-  width: 30px;
-  height: 30px;
-  margin-left: -5px;
-  margin-top: -5px;
+  animation: rotate .5s;
+}
+
+#refresh:active, #refresh-icon:active #refresh-icon{
+  animation: rotate .5s;
 }
 
 img {
@@ -272,6 +273,16 @@ img {
 
 
 /*animators*/
+
+@keyframes rotate{
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
 @keyframes pacing{
   0% {
     transform:  translate(0,0)  ;

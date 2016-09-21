@@ -55,21 +55,29 @@
 <script type="text/javascript">
 	$('#description-text').load('designer.txt');
 
+$('#refresh, #what-else, #role, #role-small').click (function() {
+
+	$('#refresh-icon').css('animation', 'rotate .5s')
+
+	setTimeout(refresh(), 5000);
+});
+
 var counter = 0;
 var role;
 var an;
 
-$('#refresh, #what-else, #role, #role-small').click (function() {
-
-	if (counter == 0) {
+function refresh() {
+		if (counter == 0) {
 		role = 'punctuation innovator';
-		$('#description-text').load('punctuation.txt');
-		console.log('punc') 
+		$('#description-text').fadeOut('slow', function(){
+			$('#description-text').load('punctuation.txt', function() {$('#description-text').fadeIn('slow');
+		});
+	});
 	}
 
 	else if (counter == 1) {
 		role = 'entrepreneur';
-		$('#description-text').load('entrepreneur.txt');
+		$('#description-text').load('entrepreneur.txt').fadeIn('slow');
 		an = true; 
 	}
 
@@ -98,8 +106,8 @@ $('#refresh, #what-else, #role, #role-small').click (function() {
 	else {
 		$('#an, #an-small').empty();
 	}
+}
 
-});
 </script>
 
 
