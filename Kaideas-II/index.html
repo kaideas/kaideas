@@ -31,7 +31,7 @@
 
 <!-- intramural director/&#8203;coach/designer/&#8203;athlete/&#8203;recruiter/&#8203;champion -->
 
-<button onclick="changeRole(counter)" id="refresh"><img src="k-circle.svg" style="width: 30px;"></img></button>
+<button id="refresh"><img src="k-circle.svg" style="width: 30px;"></img></button>
 
 </div>
 
@@ -52,24 +52,25 @@
 <script type="text/javascript">
 	$('#description-text').load('designer.txt');
 
-	var counter = 0;
+var counter = 0;
+var role;
 
+$('#refresh').click (function() {
 
-function changeRole(counter)
-{
-	var role;
 	if counter == 0 {
 		role = 'punctuation innovator';
+		$('#description-text').load('punctuation.txt'); 
 	}
 
 	else if counter == 1 {
 		role = 'entrepreneur';
+		$('#description-text').load('entrepreneur.txt'); 
 	}
 
 	document.getElementById("role").innerHTML = role;
 	document.getElementById("role-small").innerHTML = role;
-	$('#description-text').load('entrepreneur.txt'); 
-}
+
+});
 </script>
 
 
