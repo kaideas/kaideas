@@ -23,7 +23,7 @@ body {
 
 #container {
   width: 550px;
-  margin-left: 33%;
+  margin-left: 5%;
   margin-right: 5%;
   margin-top: 12vh;
   transition: .3s;
@@ -33,9 +33,10 @@ body {
 #k-circle {
   width: 50px;
     position: absolute;
-    left: 10px;
+    margin-left: 5%;
     margin-top: 4px;
     vertical-align: center;
+    padding-left: 10px;
 }
 
 #k-circle:hover {
