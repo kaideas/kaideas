@@ -31,15 +31,13 @@
 
 <!-- intramural director/&#8203;coach/designer/&#8203;athlete/&#8203;recruiter/&#8203;champion -->
 
-<button onclick="changeRole('punctuation innovator')" id="refresh"><img src="k-circle.svg" style="width: 30px;"></img></button>
+<button onclick="changeRole()" id="refresh"><img src="k-circle.svg" style="width: 30px;"></img></button>
 
 </div>
 
 <div id="role-description">
 <h3>As a <span class="underline-role" id="role-small">designer</span>,
 	<span id="description-text"></span>
-
-	<span id="what-else" class="underline-role link">What else?</span></h3>
 </h3>
 </div>
 
@@ -54,9 +52,20 @@
 <script type="text/javascript">
 	$('#description-text').load('designer.txt');
 
+	var counter = 0;
 
-function changeRole(role)
+
+function changeRole()
 {
+	var role;
+	if counter == 0 {
+		role = 'punctuation innovator';
+	}
+
+	else if counter == 1 {
+		role = 'entrepreneur';
+	}
+
 	document.getElementById("role").innerHTML = role;
 	document.getElementById("role-small").innerHTML = role;
 	$('#description-text').load('entrepreneur.txt'); 
