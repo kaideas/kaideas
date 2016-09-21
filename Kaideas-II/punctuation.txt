@@ -1,3 +1,5 @@
-As a punctuation innovator, I created Punctumotion, a motion-based typographic solution to breathe life into our messages without the illustration &amp; goofiness of an emoji or GIF.
+I created Punctumotion, a motion-based typographic solution to breathe life into our messages without the illustration &amp; goofiness of an emoji or GIF.</h3>
 
+<a href="www.kaideas.info/punctumotion">
 Read about it, watch the explainer video, and try it out here.
+</a>
