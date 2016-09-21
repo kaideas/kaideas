@@ -127,8 +127,18 @@ h3 {
 
 #role-description {
   padding-top: 20px;
+  margin-bottom: 30px;
 }
 
+#text-button {
+  background-color: var(--blue);
+  border-radius: 4px;
+  padding: 8px 14px;
+  border-bottom: none;
+  color: white;
+  text-decoration: none;
+}
+/*
 #container a {
   color: white;
   text-decoration: none;
@@ -138,7 +148,7 @@ h3 {
 
 #container a:hover {
     border-bottom: solid 2px rgba(255, 255, 255, 1);
-}
+}*/
 
 #refresh {
   position: relative;
@@ -149,7 +159,6 @@ h3 {
   float: left;
   cursor: pointer;
 }
-
 
 
 

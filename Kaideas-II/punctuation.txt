@@ -1,5 +1,5 @@
 I created Punctumotion, a motion-based typographic solution to breathe life into our messages without the illustration &amp; goofiness of an emoji or GIF.</h3>
 
-<a href="www.kaideas.info/punctumotion">
+<a href="www.kaideas.info/punctumotion" id="text-button">
 Read about it, watch the explainer video, and try it out here.
 </a> <span id="what-else" class="underline-role link">What else?</span></h3>
