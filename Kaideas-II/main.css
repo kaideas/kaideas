@@ -92,8 +92,7 @@ h2 {
 
 #role {
   border-bottom: solid 2px var(--orange);
-  padding-bottom: 4px;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #role-small {
