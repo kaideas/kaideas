@@ -71,6 +71,16 @@ $('#refresh').click (function() {
 		$('#description-text').load('entrepreneur.txt'); 
 	}
 
+	else if (counter == 2) {
+		role ='intramural director/coach/'<wbr>'designer/'<wbr>'athlete/'<wbr>'recruiter/'<wbr>'champion';
+		$('#description-text').load('berkeley.txt');
+	}
+
+	else if (counter == 3) {
+		role ='cellist and chamber musician'
+		$('#description-text').load('cellist.txt');
+	}
+
 	document.getElementById("role").innerHTML = role;
 	document.getElementById("role-small").innerHTML = role;
 	counter++;
