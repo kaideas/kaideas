@@ -25,7 +25,7 @@ body {
   width: 550px;
   margin-left: 33%;
   margin-right: 5%;
-  margin-top: 16vh;
+  margin-top: 12vh;
   transition: .3s;
 }
 
@@ -156,10 +156,6 @@ h3 {
 }
 
 #refresh:hover #refresh-icon{
-  animation: rotate .5s;
-}
-
-#refresh:active, #refresh-icon:active #refresh-icon{
   animation: rotate .5s;
 }
 
