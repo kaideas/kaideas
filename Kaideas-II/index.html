@@ -55,9 +55,12 @@
 <script type="text/javascript">
 	$('#description-text').load('designer.txt');
 
+
+$('#refresh').click (function() {
+	this.css
+})
+
 $('#refresh, #what-else, #role, #role-small').click (function() {
-
-
 	setTimeout(refresh(), 5000);
 });
 
@@ -66,6 +69,12 @@ var role;
 var an;
 
 function refresh() {
+
+	if (counter == -1) {
+		role = 'designer';
+		$('#description-text').load('designer.txt');
+	}
+
 	if (counter == 0) {
 		role = 'punctuation innovator';
 			$('#description-text').load('punctuation.txt');
@@ -87,7 +96,7 @@ function refresh() {
 		an = false;
 		role ='cellist & chamber musician'
 		$('#description-text').load('cellist.txt');
-		counter = -1;
+		counter = -2;
 	}
 
 	document.getElementById("role").innerHTML = role;
