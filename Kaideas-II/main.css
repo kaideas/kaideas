@@ -7,7 +7,7 @@
 
 html {
   background-color: white;
-  font-family: "akagi pro", "proxima nova", sans;
+  font-family: "akagi pro", "proxima nova", sans-serif;
   color: var(--blue);
   height: 100vh;
   text-rendering: optimizeLegibility;
@@ -83,7 +83,7 @@ h1 {
 
 h2 {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 50px;
   letter-spacing: 1px;
   margin: 0;
