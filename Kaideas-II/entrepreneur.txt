@@ -7,4 +7,4 @@ In the beginning, I ordered in advance of payments, accepted loose cash and kept
 <h3>
 I’ve also designed hundreds and sold thousands of other t-shirts (and miscellaneous apparel) for dozens of groups, teams and events, and overstuffing my drawers (my philosophy is: why make it if I wouldn’t want to wear it myself?). <a href="www.kaideas.info/thegame" id="text-button">
 Read more about this project here.
-</a> <span id="what-else" class="underline-role link">What else?</span></h3>
+</a></h3>
