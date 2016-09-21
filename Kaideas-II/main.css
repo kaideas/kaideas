@@ -101,7 +101,11 @@ h2 {
     cursor: pointer;
 }
 
-#role:hover {
+#role-small {
+  cursor: pointer;
+}
+
+#role:hover, #role-small:hover{
   color: var(--orange);
   transition: .3s;
 }
@@ -114,6 +118,11 @@ h3 {
 
 #what-else {
   color: var(--orange);
+}
+
+#what-else:hover {
+    color: var(--blue);
+  transition: .3s;
 }
 
 .underline-role {
@@ -138,7 +147,7 @@ h3 {
   color: white;
   text-decoration: none;
   text-align: center;
-  display: block;
+  display: inline-block;
 }
 
 #text-button:hover{
