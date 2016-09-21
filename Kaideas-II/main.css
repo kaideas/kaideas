@@ -146,6 +146,7 @@ h3 {
 
 #text-button:hover{
   background-color: var(--orange);
+  transition: .3s;
 }
 
 #refresh {
