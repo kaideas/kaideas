@@ -23,10 +23,11 @@
 <body>
 
 <div id="container">
+
+<div id="refresh"><img src="refresh.svg" id="refresh-icon"></img></div>
 <div id="role-top">
 <h1>Hi<span class="updown punctumotion-large">.</span></h1>
 <h2>I&rsquo;m Kai Takahashi:</h2>
-<button id="refresh"><img src="k-circle.svg" style="width: 30px;"></img></button>
 <h2>a<span id="an"></span>&nbsp;<span id="role">designer</span>,</h2>
 
 </div>
@@ -80,6 +81,7 @@ $('#refresh').click (function() {
 		an = false;
 		role ='cellist & chamber musician'
 		$('#description-text').load('cellist.txt');
+		counter = -1;
 	}
 
 	document.getElementById("role").innerHTML = role;
