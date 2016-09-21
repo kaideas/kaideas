@@ -33,9 +33,12 @@ body {
   width: 50px;
     position: absolute;
     left: 10px;
-    padding-top: 4px;
+    margin-top: 4px;
     vertical-align: center;
+}
 
+#k-circle:hover {
+    animation: rotate .8s;
 }
 
 header {
