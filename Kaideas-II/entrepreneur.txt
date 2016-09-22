@@ -4,7 +4,7 @@ I’ve designed and sold apparel for big rival football games (Choate/Deerfield 
 In the beginning, I ordered in advance of payments, accepted loose cash and kept track of orders on scrap paper. In November 2015, I sold almost 300 sweatshirts to fellow Yale students, taking on zero risk, accepting money on Venmo & Stripe, and exploiting the pro-Yale (not anti-Harvard) market gap, without invasive marketing blasts, out of my dorm room.
 </h3>
 
-<a href="http://www.kaideas.info/thegame" id="text-button" style="background-color:#59c770;">
+<a href="http://www.kaideas.info/thegame" id="text-button">
 Read more about this project here.
 </a>
 
