@@ -157,7 +157,7 @@ h3 {
   text-align: center;
   display: inline-block;
   color: white;
-  border-bottom: 2px solid white;
+  border: 2px solid white;
     transition: .3s;
 }
 
