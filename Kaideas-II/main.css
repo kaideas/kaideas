@@ -2,7 +2,7 @@
 
 :root{
 --orange: #ff9b32;
---blue: #0080c0;
+--blue: #006eca;
 }
 
 html {
@@ -85,23 +85,30 @@ h1 {
 h2 {
   font-size: 36px;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 48px;
   letter-spacing: 1px;
   margin: 0;
 }
 
 #role {
-  border-bottom: solid 2px var(--orange);
+/*  border-bottom: solid 2px var(--orange);*/
   cursor: pointer;
+  background-color: var(--orange);
+  padding: 0px 10px;
 }
 
 #role-small {
   cursor: pointer;
 }
 
-#role:hover, #role-small:hover{
-  color: var(--orange);
+#role:hover{
+  color: var(--blue);
   transition: .3s;
+}
+
+#role-small:hover {
+  color: var(--orange);
+    transition: .3s;
 }
 
 h3 {
@@ -115,12 +122,13 @@ h3 {
 }
 
 #what-else:hover {
-    color: white;
+  color: white !important;
   transition: .3s;
 }
 
 .underline-role {
-   border-bottom: solid 1px var(--orange);
+   border-bottom: solid 1px;
+   border-color: var(--orange);
    padding-bottom: 1px;
 }
 
@@ -152,7 +160,7 @@ h3 {
 #refresh {
     position: relative;
     left: -40px;
-    top: 177px;
+    top: 174px;
     margin: 0px;
     width: 20px;
     height: 20px;

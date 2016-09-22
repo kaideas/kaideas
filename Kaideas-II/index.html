@@ -16,9 +16,8 @@
 	<img src="k-circle.svg" id="k-circle"></img>
 
 <nav>
-	<a href="/work" class="navbar">Work</a>
-	<a href="/about" class="navbar">About</a>
-	<a href="/contact" class="navbar">Contact</a>
+	<a href="http:/kaideas.info/" class="navbar">Work</a>
+	<a href="http:/kaideas.info/about" class="navbar">About</a>
 </nav>
 </header>
 
@@ -26,7 +25,17 @@
 
 <div id="container">
 
-<div id="refresh"><img src="refresh.svg" id="refresh-icon"></img></div>
+<div id="refresh"><?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="refresh-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF9B32;}
+</style>
+<path class="st0" d="M4.2,17.6c0-4.6,3.8-8.4,8.4-8.4h8.2v5.1l8.8-7.1L20.8,0v5.2h-8.2c-6.8,0-12.4,5.6-12.4,12.4
+	C0.2,24.4,5.8,30,12.6,30h15.2v-4H12.6C8,26,4.2,22.2,4.2,17.6z"/>
+</svg>
+</img></div>
 <div id="role-top">
 <h1>Hi<span class="updown punctumotion-large">.</span></h1>
 <h2>I&rsquo;m Kai Takahashi:</h2>
@@ -57,11 +66,6 @@
 <script type="text/javascript">
 	$('#description-text').load('designer.txt');
 
-
-$('#refresh').click (function() {
-	this.css
-})
-
 $('#refresh, #what-else, #role, #role-small').click (function() {
 	setTimeout(refresh(), 5000);
 });
@@ -70,50 +74,101 @@ var counter = 0;
 var role;
 var an;
 
-function refresh() {
+// function refresh() {
 
-	if (counter == -1) {
-		role = 'designer';
-		$('#description-text').load('designer.txt');
+// 	if (counter == -1) {
+// 		role = 'designer';
+// 		$('#description-text').load('designer.txt');
+// 		$('#role').css('background-color', 'var(--orange)');
+// 	}
+
+// 	else if (counter == 0) {
+// 		role = 'punctuation innovator';
+// 			$('#description-text').load('punctuation.txt');
+// 			$('#role').css('background-color', '#27dcd4');
+// 	}
+
+// 	else if (counter == 1) {
+// 		role = 'entrepreneur';
+// 		$('#description-text').load('entrepreneur.txt');
+// 		$('#role').css('background-color', '#59c770');
+// 		an = true; 
+// 	}
+
+// 	else if (counter == 2) {
+// 		role ='intramural director/coach/<wbr>designer/<wbr>athlete/<wbr>champion';
+// 		$('#description-text').load('berkeley.txt');
+// 		$('#role').css('background-color', '#ff6f6f');
+// 	}
+
+// 	else if (counter == 3) {
+// 		an = false;
+// 		role ='cellist & chamber musician'
+// 		$('#description-text').load('cellist.txt');
+// 		$('#role').css('background-color', '#a09bea');
+// 		counter = -2;
+// 	}
+
+// 	document.getElementById("role").innerHTML = role;
+// 	document.getElementById("role-small").innerHTML = role;
+// 	counter++;
+
+// 	if (an == true) {
+// 		document.getElementById("an").innerHTML = 'n';
+// 		document.getElementById("an-small").innerHTML = 'n';
+// 	}
+
+	function refresh() {
+
+		if (counter == -1) {
+			changeRole('designer', 'designer.txt', 'var(--orange)');
+		}
+
+		else if (counter == 0) {
+			changeRole('punctuation innovator', 'punctuation.txt', '#27dcd4');
+		}
+
+		else if (counter == 1) {
+			changeRole('entrepreneur', 'entrepreneur.txt', '#59c770');
+		}
+
+		else if (counter == 2) {
+			changeRole('intramural director/coach/<wbr>designer/<wbr>athlete/<wbr>champion', 'berkeley.txt', '#ff6f6f');
+		}
+
+		else if (counter == 3) {
+			changeRole('cellist & chamber musician', 'cellist.txt', '#a09bea');
+		}
+
+		counter++;
+
+		if (counter == 4) {
+			counter = -1;
+		}
+
 	}
 
-	else if (counter == 0) {
-		role = 'punctuation innovator';
-			$('#description-text').load('punctuation.txt');
-	}
 
-	else if (counter == 1) {
-		role = 'entrepreneur';
-		$('#description-text').load('entrepreneur.txt').fadeIn('slow');
-		an = true; 
-	}
+	function changeRole(role, filename, color, an) {
+		document.getElementById("role").innerHTML = role;
+		document.getElementById("role-small").innerHTML = role;
+		$('#description-text').load(filename);
+		$('#role').css('background-color', color);
+		$('#what-else').css('color', color);
+		$('.st0').css('fill', color);
+		$('.underline-role').css('border-color', color);
 
-	else if (counter == 2) {
-		role ='intramural director/coach/<wbr>designer/<wbr>athlete/<wbr>champion';
-		$('#description-text').load('berkeley.txt');
-				console.log('berk')
-	}
+		
+		if (an == true) {
+			document.getElementById("an").innerHTML = 'n';
+			document.getElementById("an-small").innerHTML = 'n';
+		}
 
-	else if (counter == 3) {
-		an = false;
-		role ='cellist & chamber musician'
-		$('#description-text').load('cellist.txt');
-		counter = -2;
-	}
+		else {
+			$('#an, #an-small').empty();
+		}
 
-	document.getElementById("role").innerHTML = role;
-	document.getElementById("role-small").innerHTML = role;
-	counter++;
-
-	if (an == true) {
-		document.getElementById("an").innerHTML = 'n';
-		document.getElementById("an-small").innerHTML = 'n';
 	}
-
-	else {
-		$('#an, #an-small').empty();
-	}
-}
 
 </script>
 
