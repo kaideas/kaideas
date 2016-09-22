@@ -119,8 +119,8 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 #what-else {
@@ -136,7 +136,6 @@ h3 {
 .underline-role {
    border-bottom: solid 1px;
    border-color: var(--orange);
-   padding-bottom: 1px;
 }
 
 .link {
