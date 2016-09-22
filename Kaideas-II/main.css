@@ -146,10 +146,10 @@ h3 {
 
 #text-button {
   background-color: var(--orange);
-  border-radius: 4px;
-  padding: 8px 14px;
+  border-radius: 54px;
+  padding: 8px 40px;
   border-bottom: none;
-  color: var(--blue);
+  color: white;
   text-decoration: none;
   text-align: center;
   display: inline-block;
@@ -157,6 +157,7 @@ h3 {
 }
 
 #text-button:hover{
+  color: var(--orange);
   background-color: white;
   transition: .3s;
 }

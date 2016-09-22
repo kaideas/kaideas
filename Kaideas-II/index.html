@@ -153,11 +153,11 @@ var an;
 		document.getElementById("role").innerHTML = role;
 		document.getElementById("role-small").innerHTML = role;
 		$('#description-text').load(filename);
-		$('#role').css('background-color', color);
+		$('#role, #text-button').css('background-color', color);
 		$('#role-small').css('color', 'white');
 		$('#what-else').css('color', color);
 		$('.st0').css('fill', color);
-		$('#role-small').hover(function() {
+		$('#role-small, #text-button').hover(function() {
   			$(this).css('color',color)
 		}, function() {
 	    	$( this ).css('color', 'white');
