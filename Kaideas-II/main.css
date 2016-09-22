@@ -95,10 +95,10 @@ h2 {
 }
 
 #role {
-/*  border-bottom: solid 2px var(--orange);*/
   cursor: pointer;
   background-color: var(--orange);
   padding: 0px 10px;
+  margin-right: 4px;
 }
 
 #role-small {

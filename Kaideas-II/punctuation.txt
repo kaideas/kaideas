@@ -2,5 +2,5 @@ I created Punctumotion, a motion-based typographic solution to breathe life into
 
 <h3>
 <a href="http://www.kaideas.info/punctumotion" id="text-button">
-Experience it here.
+Experience Punctumotion here<span class="ellipsis punctumotion">.</span>
 </a></h3>
