@@ -13,7 +13,22 @@
 
 
 <header>
-	<img src="k-circle.svg" id="k-circle"></img>
+	<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="k-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<polygon class="k" points="52.8,44.4 67.9,29.8 72.1,29.8 72.1,25.5 57.1,25.5 57.1,29.8 61,29.8 39.1,50.9 39.1,29.8 45.3,29.8 
+		45.3,25.5 28.5,25.5 28.5,29.8 34.3,29.8 34.3,68.3 28.5,68.3 28.5,72.6 45.3,72.6 45.3,68.3 39.1,68.3 39.1,57.6 49.3,47.8 
+		63.1,68.3 57.3,68.3 57.3,72.6 74.1,72.6 74.1,68.3 68.9,68.3 	"/>
+	<path class="st0" d="M50,0C22.4,0,0,22.4,0,50s22.4,50,50,50s50-22.4,50-50S77.6,0,50,0z M50,95.7C24.8,95.7,4.3,75.2,4.3,50
+		S24.8,4.3,50,4.3S95.7,24.8,95.7,50S75.2,95.7,50,95.7z"/>
+</g>
+</svg>
 
 <nav>
 	<a href="http:/kaideas.info/" class="navbar">Work</a>
@@ -69,58 +84,14 @@
 	$('#description-text').load('designer.txt');
 
 $('#refresh, #what-else, #role, #role-small').click (function() {
-	setTimeout(refresh(), 5000);
+	refresh();
 });
 
 var counter = 0;
 var role;
 var an;
 
-// function refresh() {
-
-// 	if (counter == -1) {
-// 		role = 'designer';
-// 		$('#description-text').load('designer.txt');
-// 		$('#role').css('background-color', 'var(--orange)');
-// 	}
-
-// 	else if (counter == 0) {
-// 		role = 'punctuation innovator';
-// 			$('#description-text').load('punctuation.txt');
-// 			$('#role').css('background-color', '#27dcd4');
-// 	}
-
-// 	else if (counter == 1) {
-// 		role = 'entrepreneur';
-// 		$('#description-text').load('entrepreneur.txt');
-// 		$('#role').css('background-color', '#59c770');
-// 		an = true; 
-// 	}
-
-// 	else if (counter == 2) {
-// 		role ='intramural director/coach/<wbr>designer/<wbr>athlete/<wbr>champion';
-// 		$('#description-text').load('berkeley.txt');
-// 		$('#role').css('background-color', '#ff6f6f');
-// 	}
-
-// 	else if (counter == 3) {
-// 		an = false;
-// 		role ='cellist & chamber musician'
-// 		$('#description-text').load('cellist.txt');
-// 		$('#role').css('background-color', '#a09bea');
-// 		counter = -2;
-// 	}
-
-// 	document.getElementById("role").innerHTML = role;
-// 	document.getElementById("role-small").innerHTML = role;
-// 	counter++;
-
-// 	if (an == true) {
-// 		document.getElementById("an").innerHTML = 'n';
-// 		document.getElementById("an-small").innerHTML = 'n';
-// 	}
-
-	function refresh() {
+function refresh() {
 
 		if (counter == -1) {
 			changeRole('designer', 'designer.txt', 'var(--orange)');
@@ -153,7 +124,6 @@ var an;
 
 	function changeRole(role, filename, color, an) {
 		$('#role').css('background-color', color);
-		$('#text-button').css('background-color', color);
 		$('#role-small').css('color', 'white');
 		$('#what-else').css('color', color);
 		$('.st0').css('fill', color);
@@ -162,15 +132,18 @@ var an;
 		}, function() {
 	    	$( this ).css('color', 'white');
 	  		});
-		$('#text-button').hover(function() {
-  			$(this).css('color', color);
-		}, function() {
-	    	$( this ).css('color', 'white');
-	  		});
 		$('.underline-role').css('border-color', color);
 		$('#description-text').load(filename);
 		document.getElementById("role").innerHTML = role;
 		document.getElementById("role-small").innerHTML = role;
+		$('#text-button').css('background-color', color);
+		$('#text-button').hover(function() {
+  			$(this).css('color', color);
+  			$(this).css('background-color', 'white');
+		}, function() {
+	    	$( this ).css('color', 'white');
+	  		});
+
 
 		
 		if (an == true) {
