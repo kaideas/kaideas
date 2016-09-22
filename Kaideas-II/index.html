@@ -153,15 +153,23 @@ var an;
 		document.getElementById("role").innerHTML = role;
 		document.getElementById("role-small").innerHTML = role;
 		$('#description-text').load(filename);
-		$('#role, #text-button').css('background-color', color);
+		$('#role').css('background-color', color);
+		$('#text-button').css('background-color', color);
 		$('#role-small').css('color', 'white');
 		$('#what-else').css('color', color);
 		$('.st0').css('fill', color);
-		$('#role-small, #text-button').hover(function() {
+		$('#role-small').hover(function() {
   			$(this).css('color',color)
 		}, function() {
 	    	$( this ).css('color', 'white');
 	  		});
+		$('#text-button').hover(function() {
+  			$(this).css('color',color)
+		}, function() {
+	    	$( this ).css('color', 'white');
+	  		});
+
+
 		$('.underline-role').css('border-color', color);
 
 		
