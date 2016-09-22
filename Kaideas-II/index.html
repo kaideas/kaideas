@@ -150,8 +150,6 @@ var an;
 
 
 	function changeRole(role, filename, color, an) {
-		document.getElementById("role").innerHTML = role;
-		document.getElementById("role-small").innerHTML = role;
 		$('#description-text').load(filename);
 		$('#role').css('background-color', color);
 		$('#text-button').css('background-color', color);
@@ -169,6 +167,8 @@ var an;
 	    	$( this ).css('color', 'white');
 	  		});
 		$('.underline-role').css('border-color', color);
+		document.getElementById("role").innerHTML = role;
+		document.getElementById("role-small").innerHTML = role;
 
 		
 		if (an == true) {
