@@ -149,17 +149,21 @@ h3 {
 }
 
 #text-button {
-  background-color: white;
+  background-color: transparent;
   border-radius: 54px;
   padding: 8px 40px;
   border-bottom: none;
   text-decoration: none;
   text-align: center;
   display: inline-block;
+  color: white;
+  border-bottom: 2px solid white;
+    transition: .3s;
 }
 
 #text-button:hover{
-  background-color: rgba(255,255,255,.5);
+  background-color: white;
+  color: var(--blue);
   transition: .3s;
 }
 
