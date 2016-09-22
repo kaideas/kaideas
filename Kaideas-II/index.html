@@ -72,8 +72,6 @@
 <img src="../punctumotion/landing-thumbnail.gif">
 <img src="../footeempty.png">
 
-<a hidden id="text-button"></a>
-
 </div>
 
 
@@ -135,15 +133,15 @@ function refresh() {
 		$('#description-text').load(filename);
 		document.getElementById("role").innerHTML = role;
 		document.getElementById("role-small").innerHTML = role;
-		$('#text-button').css('background-color', color);
+		// $('#text-button').css('background-color', color);
 
-		$('#text-button').hover(function() {
-  			$(this).css('color', color);
-  			$(this).css('background-color', 'white');
-		}, function() {
-	    	$( this ).css('color', 'white');
-	    	$(this).css('background-color', color);
-	  		});
+		// $('#text-button').hover(function() {
+  // 			$(this).css('color', color);
+  // 			$(this).css('background-color', 'white');
+		// }, function() {
+	 //    	$( this ).css('color', 'white');
+	 //    	$(this).css('background-color', color);
+	 //  		});
 
 
 		
