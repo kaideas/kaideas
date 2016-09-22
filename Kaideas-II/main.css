@@ -161,7 +161,7 @@ h3 {
 }
 
 #text-button:hover{
-  color: white;
+  background-color: white;
   transition: .3s;
 }
 
