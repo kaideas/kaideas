@@ -23,11 +23,8 @@ body {
 
 #splash {
     position: absolute;
-    top: 80px;
-    right: 110px;
     z-index: -5;
-    height: 550px;
-    width: 690px;
+    width: 100%;
 /*    -webkit-clip-path: polygon(0px 0px, 700px 380px, 700px 0);*/
 }
 
@@ -38,16 +35,19 @@ body {
   font-family: "akagi pro";
 }
 
-#about {
-  background-color: var(--blue);
-  width: 550px;
-  padding-left: 60px;
+#home {
+  background-color: rgba(0,110,202,.7);
+  width: 100vw;
+  height: 100vh;
+  padding-left: 130px;
   padding-bottom: 20px;
   padding-top: 80px;
   padding-right: 20px;
   margin-bottom: 20px;
-  margin-left: 110px;
-  box-shadow: 6px 6px 12px rgba(0,0,0,.3);
+}
+
+#about {
+  width: 800px;
 }
 
 #k-circle {
@@ -165,6 +165,7 @@ h3 {
 #role-description {
   padding-top: 20px;
   margin-bottom: 30px;
+  width: 600px;
 }
 
 #text-button {
@@ -200,9 +201,9 @@ h3 {
   animation: rotate .5s;
 }
 
-img {
+/*img {
   max-width: 100%;
-}
+}*/
 
 
 #cases {
