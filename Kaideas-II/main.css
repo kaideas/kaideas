@@ -217,12 +217,15 @@ h3 {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
+  margin-left: 3%;
+  margin-right: 3%
 }
 
 .flex-item {
-  width: 50%;
+  width: 46%;
   height: auto;
   position: relative;
+  margin-bottom: 3.8%;
 }
 
 .flex-item img {
@@ -239,13 +242,13 @@ h3 {
 }
 
 .overlay-text {
-  padding-top: 10%;
+  padding-top: 20%;
   padding-left: 10%;
   padding-right: 5%;
 }
 
 .headline {
-  font-size: 2.5em;
+  font-size: 4vw;
   font-weight: 800;
   line-height: 1.1em;
 }
