@@ -39,14 +39,14 @@ body {
   background-color: var(--blue);
   width: 100vw;
   height: 100vh;
+}
+
+#about {
   padding-left: 130px;
   padding-bottom: 20px;
   padding-top: 80px;
   padding-right: 20px;
   margin-bottom: 20px;
-}
-
-#about {
   width: 800px;
 }
 
@@ -207,9 +207,115 @@ h3 {
 
 
 #cases {
+  padding: 0;
   margin-top: 100px;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
 
+.flex-item {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.flex-item img {
+  width: 100%;
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    z-index: 500;
+    height: 100%;
+    transition: .3s;
+}
+
+.overlay-text {
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+
+.headline {
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 1.1em;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.overlay:hover .bottom-text{
+  opacity: 1;
+  transition: .3s;
+
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.subhead {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: 500;
+}
+
+#gant-overlay {
+    background: rgba(0,0,0,.7);
+}
+
+#gant-overlay:hover, #punctumotion-overlay:hover,
+#game-overlay:hover, #kettlekern-overlay:hover,
+#n4l-overlay:hover{
+  background: rgba(255,155,50,.9);
+}
+
+#punctumotion-overlay {
+    background: rgba(0,110,202,.8);
+}
+
+#game-overlay {
+    background: rgba(60,87,113,.8);
+}
+
+#kettlekern-overlay {
+  background: rgba(236,28,36,.8);
+}
+
+#n4l-overlay {
+  background: rgba(0,31,76,.8);
+}
+
+#dishful-overlay {
+background: rgba(13,193,158,.8); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(13,193,158,.8) 0%, rgba(101,88,240,.8) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(13,193,158,.8) 0%,rgba(101,88,240,.8) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(13,193,158,.8) 0%,rgba(101,88,240,.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc19e', endColorstr='#6558f0',GradientType=0 ); /* IE6-9 */
+}
+
+#dishful-overlay:hover {
+  background: -moz-linear-gradient(top, rgba(255,155,50,.9) 0%, rgba(255,155,50,.9) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,155,50,.9) 0%, rgba(255,155,50,.9) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,155,50,.9) 0%, rgba(255,155,50,.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc19e', endColorstr='#6558f0',GradientType=0 ); /* IE6-9 */
+
+}
 
 
 /*animation*/
