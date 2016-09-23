@@ -217,8 +217,8 @@ h3 {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-  margin-left: 3%;
-  margin-right: 3%
+  margin-left: 130px;
+  margin-right: 130px;
 }
 
 .flex-item {
@@ -242,13 +242,13 @@ h3 {
 }
 
 .overlay-text {
-  padding-top: 20%;
+  padding-top: 15%;
   padding-left: 10%;
   padding-right: 5%;
 }
 
 .headline {
-  font-size: 4vw;
+  font-size: 3.7vw;
   font-weight: 800;
   line-height: 1.1em;
 }
@@ -310,6 +310,7 @@ background: -moz-linear-gradient(top, rgba(13,193,158,.8) 0%, rgba(101,88,240,.8
 background: -webkit-linear-gradient(top, rgba(13,193,158,.8) 0%,rgba(101,88,240,.8) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(13,193,158,.8) 0%,rgba(101,88,240,.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc19e', endColorstr='#6558f0',GradientType=0 ); /* IE6-9 */
+transition: .3s;
 }
 
 #dishful-overlay:hover {
@@ -317,7 +318,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc19e', end
 background: -webkit-linear-gradient(top, rgba(255,155,50,.9) 0%, rgba(255,155,50,.9) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(255,155,50,.9) 0%, rgba(255,155,50,.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc19e', endColorstr='#6558f0',GradientType=0 ); /* IE6-9 */
-
+transition: .3s;
 }
 
 
