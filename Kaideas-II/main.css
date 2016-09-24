@@ -85,10 +85,9 @@ nav {
 .navbar {
   font-size: 16px;
   margin: 10px 16px;
-  letter-spacing: 2px;
-  font-family: lexia;
-  font-weight: 100;
-  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "akagi pro", "proxima nova", sans-serif;
+  font-weight: 600;
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -219,6 +218,7 @@ h3 {
   justify-content: space-around;
   margin-left: 130px;
   margin-right: 130px;
+  font-family: "akagi pro", "proxima nova", "avenir", sans-serif;
 }
 
 .flex-item {
