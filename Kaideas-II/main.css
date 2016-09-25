@@ -51,7 +51,7 @@ body {
 }
 
 #k-circle {
-  width: 60px;
+  width: 50px;
     position: absolute;
     margin-left: 20px;
     margin-top: 9px;
@@ -72,12 +72,13 @@ header {
   top: 0px;
   left: 0px;
   height: 70px;
-  background-color: none;
   overflow: hidden;
+  background: rgba(0,110,202,.5);
+  z-index: 600;
 }
 
 nav {
-  top: 20px;
+  top: 25px;
   right: 2%;
   position: absolute;
 }
@@ -331,7 +332,6 @@ transition: .3s;
 
   #about {
   width: 60%;
-  overflow: hidden;
   }
 }
 
