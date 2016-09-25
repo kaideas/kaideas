@@ -22,18 +22,107 @@ body {
 }
 
 #kai {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   width: 300px;
   z-index: 800;
 }
 
-#container {
-  margin-left: 130px;
-  margin-right: 5%;
+.container {
+  width: 100vw;
   transition: .3s;
   font-family: "akagi pro";
+  position: absolute;
+  top: 0;
+  
+}
+
+.case-text {
+  padding-left: 10%;
+  padding-top: 10%;
+  width: 80%;
+}
+
+.slide {
+  height: 100vh;
+  width: 100vw;
+    color: white;
+    min-height: 600px;
+}
+
+#punctumotion-title {
+    color: var(--blue);
+}
+
+#punctumotion-description{
+  color: black;
+  width: 70%;
+}
+
+.punctumotion-display {
+  color: black;
+  font-size: 7vh;
+    color: black;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 26px;
+    font-weight: 300;
+    font-size: 2em;
+    letter-spacing: .01em;
+    display: block;
+    max-width: 60%;
+    background: #B3D7F1;
+}
+
+#right {
+  background-color: #BEF5F2;
+  position: relative;
+  right: 0;
+}
+
+#gant-case {
+  background-color: black;
+}
+
+#game-case {
+  background-color: rgb(60,87,113);
+}
+
+#dishful-case {
+  background: rgba(13,193,158,1); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(13,193,158,1) 0%, rgba(101,88,240,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(13,193,158,1) 0%,rgba(101,88,240,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(13,193,158,1) 0%,rgba(101,88,240,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc19e', endColorstr='#6558f0',GradientType=0 ); /* IE6-9 */
+transition: .3s;
+}
+
+#kettlekern-case {
+  background: rgb(236,28,36);
+}
+
+#n4l-case {
+  background: rgb(0,31,76);
+}
+
+h4 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 20px
+}
+
+.case-description {
+  font-size: 20px;
+  width: 80%;
+  color: white;
+}
+
+.case-image {
+  width: 400px;
+  margin: auto;
+  text-align: center;
 }
 
 #home {
