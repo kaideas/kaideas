@@ -214,6 +214,8 @@ h4 {
   height: 100vh;
   display: block;
   min-height: 600px;
+  position: relative;
+  overflow: hidden;
 }
 
 #about {
@@ -770,6 +772,10 @@ linear-gradient(to bottom, rgba(13,193,158,1) 0%,rgba(101,88,240,1) 100%);
     margin-bottom: 50%;
   }
 
+  #n4l-case {
+    background-position: 90% 140%;
+  }
+
 #dishful-case {
   background: url(dishful-hand.png) no-repeat 60% 100% / 60%,
 
@@ -804,6 +810,10 @@ linear-gradient(to bottom, rgba(13,193,158,1) 0%,rgba(101,88,240,1) 100%);
 @media (max-width: 450px) {
 #kai {
   right: -30px;
+}
+
+#punctumotion-home {
+  padding: 10px 20px 8px 20px;
 }
 
   }
