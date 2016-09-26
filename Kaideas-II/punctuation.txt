@@ -1,6 +1,6 @@
 I created Punctumotion, a motion-based typographic solution to breathe life into our messages without the illustration &amp; goofiness of an emoji or GIF.</h3>
 
 <h3>
-<a href="http://www.kaideas.info/punctumotion" id="text-button">
-Experience Punctumotion here<span class="ellipsis punctumotion">.</span>
+<a href="http://www.kaideas.info/punctumotion" class="text-button">
+Experience Punctumotion<span class="ellipsis punctumotion">.</span>
 </a></h3>
