@@ -213,11 +213,11 @@ h4 {
 }
 
 #about {
-  padding-left: 130px;
-  padding-bottom: 20px;
-  padding-top: 80px;
-  padding-right: 20px;
+  margin-left: 130px;
   margin-bottom: 20px;
+  margin-right: 20px;
+  padding-top: 80px;
+  padding-bottom: 20px;
   width: 800px;
 }
 
@@ -565,19 +565,56 @@ transition: .3s;
 }
 
 
-@media (max-width: 900px) {
 
-  #cases {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
 
-  #about {
-  width: 60%;
+
+
+@media (max-width: 1150px) {
+  #role-top {
+    width: 50%;
   }
 }
 
-@media (max-width: 700px) {
+
+
+@media (max-width: 900px) {
+  
+  #kai {
+    right: 20px;
+  }
+
+
+  #about {
+    width: 70%;
+    }
+
+  #role-top {
+    width: 70%;
+  }
+
+    #cases {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+  #kai {
+    width: 200px;
+  }
+
+  #role-description {
+    width: 80%;
+  }
+
+#about {
+  margin-left: 80px;
+}
+
+
+
 
   .flex-item {
     width: 50%;
@@ -609,7 +646,34 @@ transition: .3s;
 
 }
 
+
+@media (max-width: 630px) {
+  #kai {
+    width: 120px;
+    top: 70px;
+  }
+
+  #about {
+    width: 70%;
+  }
+
+  #role-top {
+    width: 100%;
+  }
+
+}
+
+
+
+
 @media (max-width: 500px) {
+
+  #about {
+    margin-left: 20px;
+    width: 80%;
+  }
+
+
 
   #cases {
     margin-left: 0px;
