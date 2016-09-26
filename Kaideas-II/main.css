@@ -21,6 +21,10 @@ body {
   margin: 0;
 }
 
+.mobile-size {
+  display: none;
+}
+
 #kai {
   position: absolute;
   top: 120px;
@@ -103,7 +107,7 @@ body {
 #punctumotion-case {
   background-color: white;
     background-image: url(punctumotion-laptop.png);
-    background-position-x: 110%;
+    background-position-x: 115%;
     background-position-y: 80%;
     background-size: auto 50%;
     background-repeat: no-repeat;
@@ -346,7 +350,7 @@ h3 {
   border-bottom: none;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
+  display: block;
   color: white;
   border: 3px solid white;
   transition: .3s;
@@ -370,7 +374,7 @@ h3 {
   border-bottom: none;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
+  display: block;
   color: var(--blue);
   border: 3px solid var(--blue);
   transition: .3s;
@@ -399,7 +403,7 @@ h3 {
 }
 
 #game-button {
-  background-color: transparent;
+  background-color: #ddc5a1;
   color: #33475a;
   border-color: #33475a;
 }
@@ -414,7 +418,7 @@ h3 {
 }
 
 #kettlekern-button {
-  background-color: transparent;
+  background-color: #ec1c24;
 }
 
 #dishful-button:hover {
@@ -436,7 +440,7 @@ h3 {
 #refresh {
     position: relative;
     left: -40px;
-    top: 174px;
+    top: 214px;
     margin: 0px;
     width: 20px;
     height: 20px;
@@ -578,6 +582,11 @@ transition: .3s;
     top: 70px;
     width: 240px;
   }
+
+  #game-case {
+    background-size: auto 65%;
+  }
+
 }
 
 
@@ -598,6 +607,64 @@ transition: .3s;
     width: 70%;
   }
 
+#punctumotion-case, #gant-case /*, #game-case*/ {
+    background-image: none;
+  }
+
+#game-button {
+  width: 40%;
+}
+
+#game-case {
+  background-size: auto 40%;
+}
+
+#dishful-button {
+  margin-top: 90%;
+}
+
+#dishful-case {
+  background: url(dishful-hand.png) no-repeat 60% 100% / 45%,
+
+linear-gradient(to bottom, rgba(13,193,158,1) 0%,rgba(101,88,240,1) 100%);
+}
+
+#kettlekern-case {
+  background-size: 80%;
+  background-position-x: 60%;
+}
+
+#kettlekern-button {
+  margin-bottom: 0;
+  margin-top: 90%;
+}
+
+
+#n4l-button {
+  margin-top: 3%;
+}
+
+  .mobile-size {
+    display: block;
+    width: 100%;
+    max-height: 30%;
+    padding-top: 30px;
+  }
+
+
+  .slide {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .case-description {
+    width: 90% !important;
+  }
+
+
+
+
+
     #cases {
       margin-left: 30px;
       margin-right: 30px;
@@ -612,10 +679,18 @@ transition: .3s;
     width: 100%;
   }
 
-#about {
-  margin-left: 80px;
-}
+  #about {
+    margin-left: 80px;
+  }
 
+  h4 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  
+  .button-top {
+
+  }
 
 
 
@@ -674,6 +749,37 @@ transition: .3s;
     font-size: 90px;
   }
 
+
+  #game-case {
+    background-size: auto 40%;
+  }
+
+  #game-button  {
+    width: auto;
+    margin-bottom: 300px;
+    margin-top: 30px;
+  }
+
+
+  #dishful-button {
+  margin-top: 100%;
+}
+
+  #n4l-button {
+    margin-top: 6%;
+    margin-bottom: 50%;
+  }
+
+#dishful-case {
+  background: url(dishful-hand.png) no-repeat 60% 100% / 60%,
+
+linear-gradient(to bottom, rgba(13,193,158,1) 0%,rgba(101,88,240,1) 100%);
+}
+
+#kettlekern-button {
+  margin-top: 70%;
+}
+
 }
 
 
@@ -685,6 +791,8 @@ transition: .3s;
     font-size: 26px;
     line-height: 32px;
   }
+
+
 
 
   #cases {
