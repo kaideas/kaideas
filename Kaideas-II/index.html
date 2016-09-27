@@ -277,6 +277,8 @@ function refresh() {
 		counter = -1;
 	}
 
+	$("html, body").animate({ scrollTop: 0 }, 300);
+
 }
 
 
@@ -303,6 +305,13 @@ function changeRole(role, filename, color, an) {
 	else {
 		$('#an, #an-small').empty();
 	}
+
+
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
 
 }
 
