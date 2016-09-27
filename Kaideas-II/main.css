@@ -897,9 +897,14 @@ linear-gradient(to bottom, rgba(101,88,240,1) 0%,rgba(13,193,158,1) 100%);
 @media (max-width: 450px) {
   
   #dishful-case {
-  background: url(dishful-hand.png) no-repeat 60% 100% / 300px,
+  background: url(dishful-hand.png) no-repeat 60% 100% / 230px,
 
   linear-gradient(to bottom, rgba(101,88,240,1) 0%,rgba(13,193,158,1) 100%);
+  }
+
+  h4 {
+    font-size: 40px;
+    line-height: 44px;
   }
 
 }
