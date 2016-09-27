@@ -80,7 +80,7 @@
 	<div class="slide" id="punctumotion-case">
 		<div class="case-content">
 
-				<h4 id="punctumotion-title">Reimagining punctuation for the <span class="no-break">digital age<span class="ellipsis punctumotion">.</span></span></h4>
+				<h4 id="punctumotion-title">Reimagining punctuation for the digital&nbsp;<span class="no-break">age<span class="ellipsis punctumotion">.</span></span></h4>
 				<ul class="case-text">
 					
 
@@ -221,7 +221,7 @@
 <script type="text/javascript">
 $('#description-text').load('designer.txt');
 
-$('#refresh, #what-else, #role, #role-small').click (function() {
+$('#refresh, .what-else, #role, #role-small').click (function() {
 	refresh();
 });
 
@@ -263,7 +263,7 @@ function refresh() {
 function changeRole(role, filename, color, an) {
 	$('#role').css('background-color', color);
 	$('#role-small').css('color', 'white');
-	$('#what-else').css('color', color);
+	$('.what-else').css('color', color);
 	$('.st0').css('fill', color);
 	$('#role-small').hover(function() {
 		$(this).css('color',color);
@@ -284,6 +284,19 @@ function changeRole(role, filename, color, an) {
 		$('#an, #an-small').empty();
 	}
 
+}
+
+
+
+var mq = window.matchMedia( "(max-width: 401px)" );
+
+if (mq.matches) {
+
+document.getElementById("role-description").innerHTML = "<h3>As a<span id=\"an-small\"></span>&nbsp;<span class=\"underline-role\" id=\"role-small\">designer</span><span id=\"description-text\"></span><span class=\"ellipsis punctumotion\">.</span><span class=\"what-else\" class=\"underline-role link\" style=\"margin-left:20px;\">Read more</span></h3>";
+console.log('superduper');
+
+} else {
+  
 }
 
 </script>
