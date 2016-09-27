@@ -70,7 +70,7 @@
 			<span id="description-text"></span>
 		</h3>
 
-		<h3> <span id="what-else" class="underline-role link">What else?</span></h3>
+		<h3> <span class="what-else underline-role link" class="">What else?</span></h3>
 	</div>
 
 	</div>
@@ -219,11 +219,16 @@
 
 
 <script type="text/javascript">
+
+
 $('#description-text').load('designer.txt');
 
 $('#refresh, .what-else, #role, #role-small').click (function() {
 	refresh();
 });
+
+
+
 
 var counter = 0;
 var role;
@@ -286,18 +291,6 @@ function changeRole(role, filename, color, an) {
 
 }
 
-
-
-var mq = window.matchMedia( "(max-width: 401px)" );
-
-if (mq.matches) {
-
-document.getElementById("role-description").innerHTML = "<h3>As a<span id=\"an-small\"></span>&nbsp;<span class=\"underline-role\" id=\"role-small\">designer</span><span id=\"description-text\"></span><span class=\"ellipsis punctumotion\">.</span><span class=\"what-else\" class=\"underline-role link\" style=\"margin-left:20px;\">Read more</span></h3>";
-console.log('superduper');
-
-} else {
-  
-}
 
 </script>
 
