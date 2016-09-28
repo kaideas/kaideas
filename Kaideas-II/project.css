@@ -55,6 +55,7 @@ h3 {
 
 #top-descriptor {
 	color: #777;
+	margin-top: 4px;
 }
 
 h4 {
@@ -62,7 +63,8 @@ h4 {
 	font-weight: 400;
 	width: 70%;
 	margin-top: 20px;
-	color: #777
+	color: #777;
+	line-height: 1.4em;
 }
 
 p {
