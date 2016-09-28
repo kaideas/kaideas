@@ -17,18 +17,29 @@ html {
 body {
 	color: #222;
 	font-size: 18px;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, p {
+	width: 700px;
+	margin-left: 25%;
+	font-family: "akagi pro", "proxima nova", sans-serif;
 }
 
 h1 {
 	color: #222;
-	font-size: 60px;
+	font-size: 48px;
 	margin-bottom: 0px;
 	font-weight: 800;
 }
 
 h2 {
 	color: #222;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
@@ -43,9 +54,10 @@ h3 {
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 400;
 	width: 70%;
+	margin-top: 20px;
 }
 
 p {
@@ -55,26 +67,19 @@ p {
 
 }
 
-h1, h2, h3, h4, h5, p {
-	width: 700px;
-}
-
 .page {
-	margin-left: 300px;
 	margin-top: 110px;
 }
 
 .pullquote {
 	font-size: 28px;
-	font-weight: 600;
-	margin-left: -50px;
-	width: 840px;
+	font-weight: 100;
 	line-height: 1.2em;
 }
 
-.phonesize{
+.wide-image{
     width: 900px;
-    margin-left: -80px;
+    margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -84,6 +89,81 @@ h1, h2, h3, h4, h5, p {
 	margin-bottom: 60px;
 }
 
+
+iframe {
+	width: 494;
+	height: 1010;
+	margin: auto;
+	display: block;
+}
+
+@media (max-width: 1150px) {
+
+	h1, h2, h3, h4, h5, p {
+	width: 80%;
+	margin-left: 11%;
+	}
+
+	h4 {
+		width: 70%;
+	}
+
+	.wide-image{
+/*		margin-left: -7%;*/
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 42px;
+		line-height: 1.1em;
+	}
+
+
+}
+
+@media (max-width: 900px) {
+
+	iframe {
+		width: 50%;
+		height: auto;
+	}
+}
+
+
+@media (max-width: 500px) {
+
+	h1, h2, h3, h4, h5, p {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 18px;
+		letter-spacing: 1px;
+	}
+
+	h4 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.pullquote {
+		font-size: 24px;
+	}
+
+	.double-photo {
+		margin-top: 10px;
+	}
+
+	.page {
+		width: 100%;
+	}
+}
 
 
 
@@ -109,6 +189,10 @@ h1, h2, h3, h4, h5, p {
     vertical-align: center;
 }
 
+.logo-circle {
+	fill: var(--orange);
+}
+
 
 header {
   width: 100%;
@@ -119,6 +203,7 @@ header {
   overflow: hidden;
   background: rgb(0,110,202);
   z-index: 600;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.5);
 }
 
 nav {

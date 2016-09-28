@@ -19,14 +19,11 @@
 	<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 	<svg version="1.1" id="k-circle" class="box_transition" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-		<style type="text/css">
-		.color-change{fill:#FFFFFF;}
-		</style>
 		<g>
 			<polygon class="k" points="52.8,44.4 67.9,29.8 72.1,29.8 72.1,25.5 57.1,25.5 57.1,29.8 61,29.8 39.1,50.9 39.1,29.8 45.3,29.8 
 			45.3,25.5 28.5,25.5 28.5,29.8 34.3,29.8 34.3,68.3 28.5,68.3 28.5,72.6 45.3,72.6 45.3,68.3 39.1,68.3 39.1,57.6 49.3,47.8 
 			63.1,68.3 57.3,68.3 57.3,72.6 74.1,72.6 74.1,68.3 68.9,68.3 	"/>
-			<path class="color-change" d="M50,0C22.4,0,0,22.4,0,50s22.4,50,50,50s50-22.4,50-50S77.6,0,50,0z M50,95.7C24.8,95.7,4.3,75.2,4.3,50
+			<path class="logo-circle" d="M50,0C22.4,0,0,22.4,0,50s22.4,50,50,50s50-22.4,50-50S77.6,0,50,0z M50,95.7C24.8,95.7,4.3,75.2,4.3,50
 			S24.8,4.3,50,4.3S95.7,24.8,95.7,50S75.2,95.7,50,95.7z"/>
 		</g>
 	</svg>
@@ -112,9 +109,9 @@
 
 
 <div class="double-photo">
-<img src="gant-first.png" class="phonesize">
+<img src="gant-first.png" class="wide-image">
 
-<img src="gant-second.png" class="phonesize">
+<img src="gant-second.png" class="wide-image">
 
 </div>
 
@@ -126,7 +123,7 @@ This was a weeklong independent assignment from April 2016.</p>
 <h2>Process</h2>
 <p>I started by walking into Gant, a boutique clothing chain store in New Haven, known for its (expensive) Ivy League aesthetic. With declining sales, Gant recently rebranded itself to appeal to a younger audience, so it seemed like a perfect fit for this project. I had to put myself into the shoes of a young adult shopping for nice clothes (which didn’t turn out to be so difficult). A benefit of their declining sales was that nobody else was in the store, so I could take a few pictures, and more importantly, talk to the single store employee working.</p>
 
-<img src="gant-photo.png">
+<img src="gant-photo.png" class="wide-image">
 
 <p>The sales associate was skeptical of the general concept, noting that it would reduce his value and that people would knock over the clothing racks while using the app. While he was biased as an employee trying to keep his job, he did offer a few ideas, like push notifications when people were nearby, and an idea to sync to your calendar to remind you to buy things (which I didn’t end up using—I suspect most people don’t want clothing stores to know their schedules). He also liked some of my ideas, especially the takeout-style idea, pairing options and wardrobe, which I’ll detail in the next section.</p>
 
@@ -145,7 +142,7 @@ This was a weeklong independent assignment from April 2016.</p>
 
 <p>So, I designed a chat-based app, a virtual in-store shopping assistant that would prompt the user with questions about what they were shopping for, and different features could be accessed with different keywords or phrases.</p>
 
-<img src="gant-messenger.png" class="phonesize">
+<img src="gant-messenger.png" class="wide-image">
 
 <p>Problems that led me to scrapping this idea:
 	<ul>
@@ -159,7 +156,7 @@ This was a weeklong independent assignment from April 2016.</p>
 <p>Though I had limited time to complete the project, I went through several iterations even after settling on my final idea (which I'll discuss next). My first iteration of the onboarding had several questions on the same page, but I found that this cluttered up the space instead of making each page one simple task. I also originally started with separate buttons for entering sizes, but transitioned to have dials that have a logical sense of order and communicate that a user just picks one in a concise manner. Similarly, the homepage went through many iterations, first with many buttons and eventually with fewer and larger buttons.
 </p>
 
-<img src="gant-onboard.png" class="phonesize">
+<img src="gant-onboard.png" class="wide-image">
 
 <h2>The Solution</h2>
 <p>Since the chat assistant bot had some issues, I decided to design a more standard app, with a visual style that mirrors that of Gant's website following their rebrand: simple, refined, monochrome.</p>
@@ -168,19 +165,19 @@ This was a weeklong independent assignment from April 2016.</p>
 The app detects when the user is in a Gant store, and has a specialized and simplified in-store homepage with Find, Try on (to pick up clothes for a scheduled fitting), and Send.
 </p>
 
-<img src="gant-home.png" class="phonesize">
+<img src="gant-home.png" class="wide-image">
 
 <h3>Find</h3>
 <p>The app allows users to narrow down what they’re looking for, and then shows where in the store those items can be found (and in the user’s size). Clothing items can be scanned individually for more information, including what other clothing it would pair well with.</p>
 
-<img src="gant-item.png" class="phonesize">
+<img src="gant-item.png" class="wide-image">
 
-<img src="gant-scan.png" class="phonesize">
+<img src="gant-scan.png" class="wide-image">
 
 <h3>Try On</h3>
 <p>The Try On feature (which I kept referring to in my head as the “takeout” feature) was simple and fit into the brief. Shoppers have less time to shop, but find the trip valuable to try on clothes; the app should help make each trip to the store as efficient as possible. Users can choose certain clothing articles they want to try on (for fit, color, etc.) and set a time for the clothes to be set aside (in a reserved fitting room?), ready for the user to try on the moment they walk in the door, just as they might order takeout from a restaurant.</p>
 
-<img src="gant-snap.png" class="phonesize">
+<img src="gant-snap.png" class="wide-image">
 
 <h3>Send (Snaprate)</h3>
 <p>In trying to figure out the best way to allow users to get fashion advice from friends, I thought instantly of social, visual-centric Snapchat. But, in its current form, Snapchat wouldn’t work optimally for this app.</p>
@@ -192,7 +189,7 @@ The app detects when the user is in a Gant store, and has a specialized and simp
 <p>This feature could open up more partnership opportunities between Snapchat and other companies that could integrate it into their apps, while gaining feedback on products and advertising. Snaprate could also be used for more routine choices like hairstyles or restaurants or movies.
 </p>
 
-<img src="gant-wardrobe.png" class="phonesize">
+<img src="gant-wardrobe.png" class="wide-image">
 
 <h3>Wardrobe</h3>
 <p>Allowing users to log their wardrobe not only helps them keep track of their clothing in an efficient way, but suggests new items that will pair well with already-owned clothes. Clothes in a user’s wardrobe are marked with a coathanger icon.</p>
@@ -200,10 +197,8 @@ The app detects when the user is in a Gant store, and has a specialized and simp
 <p>The app offers suggestions in a Tinder-like format, based on wardrobe and buying history. The user can narrow down based on type of clothing or full outfits, and add items to their bag (or just save it to a list of clothing they like but aren’t ready to commit to yet).</p>
 
 
-<div style="margin-bottom: 90vh;">
 
-<iframe style="transform: scale(0.8)" width="494" height="1010" top="280px" src="//invis.io/5E7OZWY2C" frameborder="0" allowfullscreen></iframe>
-</div>
+<iframe style="transform: scale(0.8)" src="//invis.io/5E7OZWY2C" frameborder="0" allowfullscreen></iframe>
 
 
 	</div>
