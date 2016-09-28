@@ -24,7 +24,7 @@ body {
 	width: 100%;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p{
 	width: 700px;
 	margin-left: 25%;
 	font-family: "akagi pro", "proxima nova", sans-serif;
@@ -53,18 +53,27 @@ h3 {
 	margin-top: 10px;
 }
 
+#top-descriptor {
+	color: #777;
+}
+
 h4 {
 	font-size: 22px;
 	font-weight: 400;
 	width: 70%;
 	margin-top: 20px;
+	color: #777
 }
 
 p {
 	margin-top: 10px;
 	margin-bottom: 30px;
 	line-height: 1.5em;
+	font-size: 18px;
+}
 
+ul {
+	margin-left: 12%;
 }
 
 .page {
@@ -78,10 +87,10 @@ p {
 }
 
 .wide-image{
-    width: 900px;
-    margin-left: 0px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+    margin: 20px auto;
+    width: 1000px;
+    display: block;
 }
 
 .double-photo {
@@ -118,6 +127,10 @@ iframe {
 		line-height: 1.1em;
 	}
 
+	.page {
+		margin-top: 120px;
+	}
+
 
 }
 
@@ -152,6 +165,12 @@ iframe {
 		margin-bottom: 10px;
 	}
 
+	ul {
+		padding-left: 5%;
+		padding-right: 3%;
+	}
+
+
 	.pullquote {
 		font-size: 24px;
 	}
@@ -164,7 +183,6 @@ iframe {
 		width: 100%;
 	}
 }
-
 
 
 
@@ -185,7 +203,7 @@ iframe {
   width: 50px;
     position: absolute;
     margin-left: 20px;
-    margin-top: 9px;
+    margin-top: 10px;
     vertical-align: center;
 }
 
@@ -201,13 +219,12 @@ header {
   left: 0px;
   height: 70px;
   overflow: hidden;
-  background: rgb(0,110,202);
+  background: rgba(0,110,202,.5);
   z-index: 600;
-  box-shadow: 0px 1px 2px rgba(0,0,0,.5);
 }
 
 nav {
-  top: 5px;
+  top: 10px;
   right: 20px;
   position: absolute;
   z-index: 10000;
@@ -235,12 +252,12 @@ nav {
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
   transform: scale(1.2);
-    transition: .3s;
+  transition: .3s;
 }
 
 #about-svg {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   position: relative;
   transition: .3s;
 }
