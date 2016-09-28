@@ -92,6 +92,7 @@ body {
 
 #gant-description {
   width: 40%;
+  color: black;
 }
 
 #gant-image {
@@ -145,17 +146,17 @@ body {
 }
 
 #gant-case {
-  background-color: #aaa;
+  background-color: #d4e2e3;
   background-image: url(../gant-first.png);
   background-position: 100% 256px;
   background-size: 50%;
   background-repeat: no-repeat;
+  color: black;
 }
 
 #game-case {
-/*  background-color: rgb(60,87,113);*/
-background-color: #ddc5a1;
-    background-image: url(game-silhouette.png);
+background-color: #90a3b5;
+    background-image: url(game-silhouette-2.png);
     background-position-x: 100%;
     background-position-y: 100%;
     background-size: auto 70%;
@@ -173,7 +174,7 @@ overflow:hidden;
 }
 
 #kettlekern-case {
-  background: rgb(236,28,36);
+  background: #c3a67e;
       background-image: url(kettlekern-shadow.png);
 background-position-x: 100%;
     background-position-y: 120%;
@@ -204,11 +205,14 @@ h4 {
 }
 
 #home {
+  background-image: url(background-10.png);
+  background-repeat: no-repeat;
   background-color: var(--blue);
+  background-size: auto 100%;
   width: 100vw;
   height: 100vh;
   display: block;
-  min-height: 600px;
+  min-height: 700px;
   position: relative;
   overflow: hidden;
 }
@@ -433,14 +437,14 @@ h3 {
 }
 
 #game-button {
-  background-color: #ddc5a1;
+  background-color: #90a3b5;
   color: #33475a;
   border-color: #33475a;
 }
 
 #game-button:hover {
   background-color: #33475a;
-  color: #ddc5a1;
+  color: #90a3b5;
 }
 
 #dishful-button {
@@ -485,6 +489,33 @@ h3 {
 #dishful-phone-size {
   display: none;
 }
+
+
+#bottom {
+
+  background-image: url(background-10.png);
+  background-repeat: no-repeat;
+  background-color: var(--blue);
+  background-size: auto 100%;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #cases {
   padding: 0;
@@ -673,12 +704,17 @@ transition: .3s;
   #kettlekern-case {
     background-size: auto 750px;
     background-position-x: 55%;
-    background-position-y: 75%; 
+    background-position-y: 75%;
+    color: black;
   }
 
   #kettlekern-button {
     margin-bottom: 0;
     margin-top: 700px;
+  }
+
+  #kettlekern-description {
+    color: black;
   }
 
 
@@ -915,7 +951,7 @@ linear-gradient(to bottom, rgba(101,88,240,1) 0%,rgba(13,193,158,1) 100%);
   }
 
   #home {
-    min-height: 100vh;
+    min-height: 700px;
     height: auto;
   }
 
