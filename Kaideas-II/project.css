@@ -75,7 +75,11 @@ p {
 }
 
 ul {
-	margin-left: 12%;
+	margin-left: 27%;
+}
+
+li {
+	margin-bottom: 16px;
 }
 
 .page {
@@ -93,6 +97,11 @@ ul {
     margin: 20px auto;
     width: 1000px;
     display: block;
+}
+
+.small-image {
+	width: 800px;
+	margin: 20px auto;
 }
 
 .double-photo {
@@ -113,6 +122,10 @@ iframe {
 	h1, h2, h3, h4, h5, p {
 	width: 80%;
 	margin-left: 11%;
+	}
+
+	ul {
+		margin-left: 13%;
 	}
 
 	h4 {
@@ -168,8 +181,8 @@ iframe {
 	}
 
 	ul {
-		padding-left: 5%;
-		padding-right: 3%;
+		margin-left: 5%;
+		margin-right: 3%;
 	}
 
 
