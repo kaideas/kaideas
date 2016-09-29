@@ -284,7 +284,7 @@ header {
   left: 0px;
   height: 70px;
   overflow: hidden;
-  background: rgba(0,110,202,.5);
+  background: var(--blue);
   z-index: 600;
 }
 
