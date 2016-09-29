@@ -7,7 +7,7 @@
 
 html {
   background-color: white;
-  font-family: "akagi pro", "proxima nova", sans-serif;
+/*  font-family: "akagi pro", "proxima nova", sans-serif;*/
   color: white;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
@@ -62,8 +62,6 @@ nav {
   font-size: 16px;
   padding: 10px 16px;
   letter-spacing: 1px;
-  font-family: "akagi pro", "proxima nova", sans-serif;
-  font-weight: 600;
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -119,7 +117,7 @@ nav {
 .container {
   width: 100vw;
   transition: .3s;
-  font-family: "akagi pro";
+/*  font-family: "akagi pro";*/
   position: relative;
   top: 0;
   
@@ -143,8 +141,8 @@ nav {
   justify-content: flex-start;
   width: 100%;
 
-  font-family: "akagi pro", "proxima nova", "avenir", sans-serif;
-}
+/*  font-family: "akagi pro", "proxima nova", "avenir", sans-serif;
+*/}
 
 .slide {
   height: 100vh;
