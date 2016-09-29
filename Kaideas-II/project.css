@@ -12,16 +12,22 @@ html {
   -webkit-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1";
+  font-family: "akagi pro", "proxima nova", sans-serif;
+
 }
 
 body {
 	color: #222;
 	font-size: 18px;
 	margin: 0;
+	font-family: "akagi pro", "proxima nova", sans-serif;
+
 }
 
 .container {
 	width: 100%;
+	font-family: "akagi pro", "proxima nova", sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, p{
@@ -35,6 +41,9 @@ h1 {
 	font-size: 48px;
 	margin-bottom: 0px;
 	font-weight: 800;
+	font-family: "akagi pro", "proxima nova", sans-serif;
+
+
 }
 
 h2 {
@@ -42,6 +51,8 @@ h2 {
 	font-size: 30px;
 	font-weight: 600;
 	margin-bottom: 10px;
+	font-family: "akagi pro", "proxima nova", sans-serif;
+
 }
 
 h3 {
@@ -51,6 +62,8 @@ h3 {
 	margin-bottom: 10px;
 	font-weight: 500;
 	margin-top: 20px;
+	font-family: "akagi pro", "proxima nova", sans-serif;
+
 }
 
 #top-descriptor {
@@ -67,6 +80,8 @@ h4 {
 	margin-top: 20px;
 	color: #777;
 	line-height: 1.4em;
+	font-family: "akagi pro", "proxima nova", sans-serif;
+
 }
 
 p {
@@ -74,10 +89,14 @@ p {
 	margin-bottom: 30px;
 	line-height: 1.5em;
 	font-size: 18px;
+	font-family: "akagi pro", "proxima nova", sans-serif;
+
 }
 
 ul {
 	margin-left: 27%;
+	font-family: "akagi pro", "proxima nova", sans-serif;
+
 }
 
 li {
