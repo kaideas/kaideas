@@ -50,7 +50,7 @@ h3 {
 	letter-spacing: 3px;
 	margin-bottom: 10px;
 	font-weight: 500;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 #top-descriptor {
@@ -58,10 +58,12 @@ h3 {
 	margin-top: 4px;
 }
 
+
+
 h4 {
 	font-size: 22px;
 	font-weight: 400;
-	width: 70%;
+	width: 50%;
 	margin-top: 20px;
 	color: #777;
 	line-height: 1.4em;
@@ -94,14 +96,15 @@ li {
 
 .wide-image{
 
-    margin: 20px auto;
+    margin: 30px auto;
     width: 1000px;
     display: block;
 }
 
 .small-image {
-	width: 800px;
+	width: 600px;
 	margin: 20px auto;
+	display: block;
 }
 
 .double-photo {
@@ -154,6 +157,10 @@ iframe {
 	iframe {
 		width: 50%;
 		height: auto;
+	}
+
+	.small-image {
+		width: 80%;
 	}
 }
 
