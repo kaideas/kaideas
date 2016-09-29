@@ -95,7 +95,7 @@ nav {
   transition: .3s;
 }
 
-#bottom-svg {
+#resume-svg {
   width: 30px;
   height: 30px;
   position: relative;
@@ -114,7 +114,7 @@ nav {
   width: 270px;
 }
 
-.container {
+#work {
   width: 100vw;
   transition: .3s;
 /*  font-family: "akagi pro";*/
@@ -496,7 +496,7 @@ h3 {
 }
 
 
-#bottom {
+#resume {
 
   background-image: url(background-10.png);
   background-repeat: no-repeat;
@@ -531,19 +531,32 @@ h3 {
 }
 
 
-#resume {
+#resume-link {
   position: relative;
   width: 250px;
   display: block;
     margin: 20px auto;
+  background-color: var(--orange);
+}
+
+#resume-link:hover {
+  background-color: var(--orange);
 }
 
 
 #email {
   margin-top: 30px;
   font-size: 30px;
-
+   color: white;
+  transition: .3s;
 }
+
+#email:hover {
+  color: var(--orange);
+  transition: .3s;
+  cursor: pointer;
+}
+
 
 .bottom-quote {
   position: relative;
@@ -591,6 +604,11 @@ h3 {
 }
 
 
+.underline-link{
+   border-bottom: solid 1px;
+   border-color: var(--orange);
+}
+
 
 @media (max-width: 1150px) {
   #role-top {
@@ -629,7 +647,7 @@ h3 {
   width: 30%
 }
 
-#bottom {
+#resume {
   min-height: 100vh;
   height: auto;
 }

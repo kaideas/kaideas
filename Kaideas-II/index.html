@@ -74,9 +74,9 @@
 		</a>
 
 
-<a class="navbar" id="bottom-button">
+<a class="navbar" id="resume-button">
 		
-		<svg version="1.1" id="bottom-svg"
+		<svg version="1.1" id="resume-svg"
 			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 			 x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
 			 xml:space="preserve">
@@ -147,7 +147,7 @@
 	</div>
 </div>
 
-<div class="container">
+<div id="work">
 	<div class="slide" id="punctumotion-case" onclick="window.location='punctumotion';">
 		<div class="case-content">
 
@@ -290,7 +290,7 @@
 </div>
 
 
-<div id="bottom">
+<div id="resume">
 
 
 
@@ -372,11 +372,11 @@
 
 
 	<div id="bottom-buttons">
-	<a target="_blank" href="kai-takahashi-resume-2016.pdf" class="text-button" id="resume">
+	<a target="_blank" href="kai-takahashi-resume-2016.pdf" class="text-button" id="resume-link">
 		View my resume
 	</a>
 
-	<div id="email">Email me! kai.takahashi@gmail.com</div>
+	<div id="email" onclick="window.location='mailto:kai.takahashi@gmail.com;"><span class="underline-link">Email me! kai.takahashi@gmail.com</div>
 
 	</div>
 
@@ -482,42 +482,42 @@ function changeRole(role, filename, color, an) {
 
 
 $("#about-button").click(function() {
-	changeNavButtonSize('about', 'bottom', 'work');
+	changeNavButtonSize('about', 'resume', 'work');
   $("html, body").animate({ scrollTop: 0 }, 300);
   return false;
 });
 
 $("#work-button").click(function() {
-  changeNavButtonSize('work', 'about', 'bottom');
-  $("html, body").animate({scrollTop:$('.container').position().top}, 300);
+  changeNavButtonSize('work', 'about', 'resume');
+  $("html, body").animate({scrollTop:$('#work').position().top}, 300);
 
   return false;
 });
 
-$("#bottom-button").click(function() {
-   changeNavButtonSize('bottom', 'about', 'work');
-  $("html, body").animate({scrollTop:$('#bottom').position().top}, 300);
+$("#resume-button").click(function() {
+   changeNavButtonSize('resume', 'about', 'work');
+  $("html, body").animate({scrollTop:$('#resume').position().top}, 300);
   return false;
 });
 
 
 var top = $('html, body').offset().top;
-var work = $('.container').offset().top - 50;
-var bottom = $('#bottom').offset().top - 100;
+var work = $('#work').offset().top - 50;
+var resume = $('#resume').offset().top - 100;
 
 
 $(window).on( 'scroll', function(){
 
         if ($(window).scrollTop() < work) {
-              changeNavButtonSize('about', 'work', 'bottom');
+              changeNavButtonSize('about', 'work', 'resume');
         }
 
         if ($(window).scrollTop() >= work) {
-  			  changeNavButtonSize('work', 'about', 'bottom');
+  			  changeNavButtonSize('work', 'about', 'resume');
 		}
 		
-		if ($(window).scrollTop() >= bottom) {
-  		      changeNavButtonSize('bottom', 'about', 'work');
+		if ($(window).scrollTop() >= resume) {
+  		      changeNavButtonSize('resume', 'about', 'work');
         }
 });
 
