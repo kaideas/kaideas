@@ -102,6 +102,10 @@ nav {
   transition: .3s;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*end header*/
 
 
@@ -545,16 +549,25 @@ h3 {
 
 
 #email {
-  margin-top: 30px;
+  margin-top: 50px;
   font-size: 30px;
-   color: white;
-  transition: .3s;
+  color: white;
+  font-weight: 300;
 }
 
-#email:hover {
-  color: var(--orange);
+#email-link {
+   color: white;
   transition: .3s;
-  cursor: pointer;
+  border-bottom: solid 1px;
+  border-color: var(--orange);
+  font-weight: 500;
+  font-size: 22px;
+}
+
+#email-link:hover {
+   color: var(--orange);
+  transition: .3s;
+    cursor: pointer;
 }
 
 
@@ -851,6 +864,10 @@ linear-gradient(to bottom, rgba(101,88,240,1) 0%,rgba(13,193,158,1) 100%);
   width: 90%;
 }
 
+.bottom-photo-big img{
+  width: 50%
+}
+
 }
 
 @media (max-width: 450px) {
@@ -884,9 +901,6 @@ linear-gradient(to bottom, rgba(101,88,240,1) 0%,rgba(13,193,158,1) 100%);
     padding: 10px 20px 8px 20px;    
   }
 
-  #role-description {
-
-  }
 
   #about {
     padding-top: 140px;
