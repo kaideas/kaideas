@@ -42,6 +42,7 @@ h1 {
 	font-weight: 800;
 /*	font-family: "akagi pro", "proxima nova", sans-serif;
 */
+	font-family: avenir;
 
 }
 
@@ -335,7 +336,7 @@ nav {
   transition: .3s;
 }
 
-#bottom-svg {
+#resume-svg {
   width: 30px;
   height: 30px;
   position: relative;
