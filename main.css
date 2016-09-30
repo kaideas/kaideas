@@ -435,6 +435,7 @@ h3 {
   background-color: white !important;
   color: var(--blue);
   transition: .3s;
+  cursor: pointer;
 }
 
 .text-button-light {
