@@ -97,6 +97,13 @@ li {
 	margin-bottom: 16px;
 }
 
+ul a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
 .page {
 	margin-top: 110px;
 }
