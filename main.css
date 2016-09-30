@@ -187,6 +187,10 @@ a {
   color: #33475a;
 }
 
+#game-title:hover {
+  color: #dec8a6;
+}
+
 #punctumotion-case {
   background-color: white;
     background-image: url(punctumotion-laptop.png);
@@ -232,7 +236,7 @@ a {
 
 #gant-case {
   background-color: #d4e2e3;
-  background-image: url(../gant-first.png);
+  background-image: url(gant-first.png);
   background-position: 100% 256px;
   background-size: 50%;
   background-repeat: no-repeat;
@@ -264,9 +268,13 @@ background-position-x: 100%;
     background-position-y: 120%;
     background-size: auto 80%;
     background-repeat: no-repeat;
-
-
+    color: #222;
 }
+
+ #kettlekern-description {
+       color: #222;
+  }
+
 
 #n4l-case {
   background-color: rgb(0,31,76);
@@ -282,7 +290,30 @@ h4 {
   margin-top: 20px;
   line-height: 60px;
   font-weight: 800;
+  transition: .3s;
 }
+
+h4:hover{
+  color: white;
+  cursor: pointer;
+}
+
+#punctumotion-title:hover {
+  color: #27dbd3;
+}
+
+#gant-title:hover {
+  color: #fffe00;
+}
+
+#dishful-title:hover {
+  color: rgb(101,88,240);
+}
+
+#n4l-title:hover {
+  color: #e61e25;
+}
+
 
 .no-break {
   white-space:nowrap;
@@ -703,13 +734,11 @@ h3 {
   }
 
 
-
-
   #kettlekern-case {
     background-size: auto 750px;
     background-position-x: 55%;
     background-position-y: 75%;
-    color: #222;
+ 
   }
 
   #kettlekern-button {
