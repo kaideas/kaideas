@@ -120,7 +120,6 @@ a {
 #work {
   width: 100vw;
   transition: .3s;
-/*  font-family: "akagi pro";*/
   position: relative;
   top: 0;
   
@@ -283,8 +282,6 @@ h4 {
   margin-top: 20px;
   line-height: 60px;
   font-weight: 800;
-
-  font-family: "akagi pro", avenir, sans-serif;
 }
 
 .no-break {
