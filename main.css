@@ -877,7 +877,7 @@ linear-gradient(to top, rgba(101,88,240,1) 0%,rgba(13,193,158,1) 100%);
   }
 
   #refresh {
-    top: 366px;
+    top: 346px;
   }
 
 #kettlekern-button {
@@ -906,6 +906,10 @@ linear-gradient(to top, rgba(101,88,240,1) 0%,rgba(13,193,158,1) 100%);
   #kai {
     right: 20px;
     width: 200px;
+  }
+
+  #refresh {
+    top: 366px;
   }
 
   #punctumotion-home {
