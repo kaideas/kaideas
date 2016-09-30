@@ -196,14 +196,17 @@ iframe {
 
 @media (max-width: 900px) {
 
-	iframe {
+/*	iframe {
 		width: 50%;
 		height: auto;
-	}
+	}*/
 
 	.small-image {
 		width: 80%;
 	}
+
+
+	
 }
 
 
