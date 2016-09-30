@@ -510,7 +510,7 @@ h3 {
 #refresh {
     position: relative;
     left: -40px;
-    top: 200px;
+    top: 214px;
     margin: 0px;
     width: 20px;
     height: 20px;
@@ -853,7 +853,7 @@ linear-gradient(to top, rgba(101,88,240,1) 0%,rgba(13,193,158,1) 100%);
 
   #refresh {
     right: 20px;
-    top: 300px;
+    top: 312px;
     left: auto;
     position: absolute;
   }
@@ -877,7 +877,7 @@ linear-gradient(to top, rgba(101,88,240,1) 0%,rgba(13,193,158,1) 100%);
   }
 
   #refresh {
-    top: 354px;
+    top: 366px;
   }
 
 #kettlekern-button {
