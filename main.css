@@ -651,6 +651,30 @@ h3 {
 }
 
 
+#oops {
+  text-align:center;
+  margin:50px auto;
+  display:block;
+  font-size: 40px;
+  padding-left: 2%;
+  width:60%;
+  color: white;
+  line-height: 1.2em;
+}
+
+@media (max-width: 500px) {
+  #oops {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  #didnt-work {
+    padding-left: 40px;
+  }
+}
+
+
+
 @media (max-width: 1150px) {
   #role-top {
     width: 90%;
