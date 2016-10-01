@@ -1,7 +1,7 @@
 I’ve designed hundreds and sold thousands of t-shirts (and miscellaneous apparel) for dozens of groups, teams and events, overstuffing my drawers in the process—my philosophy is: why make it if I wouldn’t want to wear it myself?. In November 2015, I sold almost 300 'The Game' sweatshirts to fellow Yale students, while I took on zero risk and capitalized on the pro-Yale (not anti-Harvard) market gap.
 </h3>
 <h3>
-<a href="http://www.kaideas.info/thegame" class="text-button">
+<a href="game" class="text-button">
 Read more about The Game here.
 </a>
 </h3>
