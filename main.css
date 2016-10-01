@@ -653,7 +653,7 @@ h3 {
 
 @media (max-width: 1150px) {
   #role-top {
-    width: 50%;
+    width: 90%;
   }
 
   #kai {
@@ -707,10 +707,6 @@ h3 {
     #about {
       width: 70%;
       }
-
-    #role-top {
-      width: 70%;
-    }
 
   #punctumotion-case, #gant-case /*, #game-case*/ {
       background-image: none;
