@@ -103,6 +103,17 @@ ul a{
 }
 
 
+a {
+	color: var(--blue);
+	text-decoration: none;
+	font-weight: 500;
+}
+
+a:hover {
+	color: var(--orange);
+	transition: .2s;
+}
+
 
 .page {
 	margin-top: 110px;
