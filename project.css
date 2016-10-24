@@ -127,6 +127,13 @@ ul a{
 	display: block;
 }
 
+.smaller-image {
+	width: 400px;
+	margin: 20px auto;
+	display: block;
+
+}
+
 .double-photo {
 	margin: 60px auto;
 	width: 75%;
@@ -201,7 +208,7 @@ iframe {
 		height: auto;
 	}*/
 
-	.small-image {
+	.small-image, .smaller-image {
 		width: 80%;
 	}
 
