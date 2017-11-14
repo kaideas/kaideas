@@ -166,8 +166,8 @@ a {
 }
 
 .case-description {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 28px;
   width: 50%;
   color: white;
 }
@@ -220,7 +220,7 @@ a {
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
     margin-top: 26px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: .01em;
     display: block;
     max-width: 60%;
@@ -344,8 +344,8 @@ h4:hover{
 
 
 h1 {
-  font-size: 90px;
-  font-weight: 500;
+  font-size: 100px;
+  font-weight: 600;
   letter-spacing: 1px;
   margin: 0px 0px 10px 0px;
   color: white;
@@ -353,8 +353,8 @@ h1 {
 
 h2 {
   font-size: 36px;
-  font-weight: 700;
-  line-height: 48px;
+  font-weight: 600;
+  line-height: 52px;
   letter-spacing: 1px;
   margin: 0;
 }
@@ -426,7 +426,7 @@ h3 {
   transition: .3s;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: 700;
+  font-weight: 600;
 
   box-shadow: 0px 2px 2px rgba(0,0,0,.5);
 }
@@ -451,7 +451,7 @@ h3 {
   transition: .3s;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 700;
+  font-weight: 600;
   box-shadow: 0px 2px 2px rgba(0,0,0,.5);
 }
 
@@ -542,19 +542,6 @@ h3 {
   overflow: hidden;
 
 }
-#bottom-photos {
-  padding: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-  width: 95%;
-  margin: 90px auto 20px auto;
-}
 
 #bottom-buttons {
   margin: auto;
@@ -580,7 +567,7 @@ h3 {
   margin-top: 50px;
   font-size: 30px;
   color: white;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #email-link {
@@ -588,7 +575,7 @@ h3 {
   transition: .3s;
   border-bottom: solid 1px;
   border-color: var(--orange);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 22px;
 }
 
@@ -599,21 +586,6 @@ h3 {
 }
 
 
-.bottom-quote {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 100;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.bottom-photo {
-  width: 25%;
-  position: relative;
-    text-align: center;
-}
-
 .bottom-photo-big {
   margin: 40px auto 10px auto;
   display: block;
@@ -622,26 +594,6 @@ h3 {
 
 .bottom-photo-big img{
   width: 13%
-}
-
-.bottom-photo img {
-  width: 42%;
-  position: relative;
-}
-
-.bottom-name {
-  text-align: center;
-  font-weight: 600;
-  margin-top: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.bottom-title {
-  font-size: 12px;
-  text-transform: none;
-  letter-spacing: 0px;
-  font-weight: 300;
 }
 
 
