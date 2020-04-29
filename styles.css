@@ -172,7 +172,7 @@ letter-spacing: 2px;
 
 
 /* responsive */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 html {
   font-size: 14px;
   margin: 4vh 20px;
